@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "title": "Serahr — Digital Solutions for Your Business",
+    "description": "Prototyping for software solutions. Appointment reminders, AI chatbots, and visitor counting — modern, secure, and made in Germany."
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Prototyping for Software Solutions",
+    "headline": "Digital Tools That Simplify Your Day",
+    "subheadline": "Automated appointment reminders, intelligent chatbots, and real-time visitor counting — modern, secure, and easy to use.",
+    "cta": "Explore Products",
+    "cta_secondary": "Get in Touch"
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Three solutions, one goal: making your business more efficient.",
+    "remind": {
+      "name": "SerahrRemind",
+      "tagline": "Never Miss an Appointment Again",
+      "description": "Automatic appointment reminders via SMS and email for practices and service providers. Reduce no-shows and save valuable time.",
+      "link": "Learn more"
+    },
+    "chat": {
+      "name": "SerahrChat",
+      "tagline": "Your AI FAQ Assistant",
+      "description": "An intelligent chatbot that instantly answers your customers' most common questions. Easy to set up, available around the clock.",
+      "link": "Learn more"
+    },
+    "count": {
+      "name": "SerahrCount",
+      "tagline": "Real-Time Visitor Counting",
+      "description": "Track visitor flows live at events and venues. Data-driven decisions in real time.",
+      "link": "Learn more"
+    }
+  },
+  "trust": {
+    "item1_label": "Focus",
+    "item1_text": "Small & medium businesses",
+    "item2_label": "Approach",
+    "item2_text": "Simple, not complicated",
+    "item3_label": "Development",
+    "item3_text": "From Germany"
+  },
+  "footer": {
+    "tagline": "Prototyping for software solutions.",
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
+    "contact": "Contact",
+    "copyright": "© {year} Thorsten Ahrens. All rights reserved."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have questions about our products or want to learn more? Write to us — we'll get back to you shortly.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "product": "Regarding product",
+    "product_none": "General inquiry",
+    "submit": "Send Message",
+    "success": "Thank you! We'll get back to you shortly.",
+    "error": "Something went wrong. Please try again."
+  },
+  "remind_page": {
+    "meta_title": "SerahrRemind — Automatic Appointment Reminders",
+    "meta_description": "Reduce no-shows with automatic reminders via SMS and email. For practices, salons, and service providers.",
+    "headline": "Never Miss an Appointment Again",
+    "subheadline": "Automatic reminders via SMS and email — so your customers show up on time and you have less downtime.",
+    "cta": "Get Started",
+    "features": {
+      "title": "What SerahrRemind Does",
+      "sms": {
+        "title": "SMS & Email",
+        "text": "Reminders via the channel your customers prefer."
+      },
+      "timing": {
+        "title": "Flexible Timing",
+        "text": "24h before, 1h before — you decide when to remind."
+      },
+      "integration": {
+        "title": "Easy Setup",
+        "text": "Ready in minutes. No technical knowledge required."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "text": "See at a glance how many no-shows you've prevented."
+      }
+    },
+    "audience": {
+      "title": "Perfect For",
+      "items": "Medical practices, Dental offices, Physiotherapy, Hair salons, Beauty studios, Consulting firms"
+    }
+  },
+  "chat_page": {
+    "meta_title": "SerahrChat — AI-Powered FAQ Chatbot",
+    "meta_description": "An intelligent chatbot that automatically answers your customers' most common questions. Easy to set up, available 24/7.",
+    "headline": "Your AI FAQ Assistant",
+    "subheadline": "Answer customer questions automatically — around the clock, without additional staff.",
+    "cta": "Get Started",
+    "features": {
+      "title": "What SerahrChat Does",
+      "ai": {
+        "title": "AI-Powered",
+        "text": "Understands natural language and learns from your FAQ documents."
+      },
+      "setup": {
+        "title": "Quick Setup",
+        "text": "Upload FAQ document, embed widget — done."
+      },
+      "widget": {
+        "title": "Works Everywhere",
+        "text": "One small script tag is all it takes — works on any website."
+      },
+      "managed": {
+        "title": "Managed Service",
+        "text": "We take care of hosting, updates, and maintenance."
+      }
+    },
+    "audience": {
+      "title": "Perfect For",
+      "items": "Small businesses, Service providers, Online shops, Practices, Associations"
+    }
+  },
+  "count_page": {
+    "meta_title": "SerahrCount — Real-Time Visitor Counting",
+    "meta_description": "Track visitor flows in real time. For events, venues, and public facilities.",
+    "headline": "Real-Time Visitor Counting",
+    "subheadline": "Always know how many visitors are on site — for better planning and more safety.",
+    "cta": "Get Started",
+    "features": {
+      "title": "What SerahrCount Does",
+      "realtime": {
+        "title": "Real-Time Data",
+        "text": "Live counting with instant display on any device."
+      },
+      "simple": {
+        "title": "Easy to Use",
+        "text": "Count by click — no complicated setup needed."
+      },
+      "history": {
+        "title": "Historical Data",
+        "text": "Analyze visitor trends over days, weeks, and months."
+      },
+      "share": {
+        "title": "Shareable Display",
+        "text": "Public display URL for visitors or authorities."
+      }
+    },
+    "audience": {
+      "title": "Perfect For",
+      "items": "Events, Trade shows, Museums, Public facilities, Festivals, Markets"
+    }
+  },
+  "legal": {
+    "imprint_title": "Imprint",
+    "privacy_title": "Privacy Policy",
+    "privacy_product_title": "Privacy Policy — {product}",
+    "terms_title": "Terms and Conditions — {product}",
+    "back": "Back to homepage",
+    "placeholder": "This page will be filled with legal content."
+  }
+}

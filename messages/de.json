@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "title": "Serahr — Digitale Lösungen für Ihr Business",
+    "description": "Prototyping für Softwarelösungen. Termin-Erinnerungen, KI-Chatbots und Besucherzählung — modern, sicher und made in Germany."
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Produkte",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "badge": "Prototyping für Softwarelösungen",
+    "headline": "Digitale Tools, die Ihren Alltag vereinfachen",
+    "subheadline": "Automatisierte Termin-Erinnerungen, intelligente Chatbots und Echtzeit-Besucherzählung — modern, sicher und einfach zu bedienen.",
+    "cta": "Produkte entdecken",
+    "cta_secondary": "Kontakt aufnehmen"
+  },
+  "products": {
+    "title": "Unsere Produkte",
+    "subtitle": "Drei Lösungen, ein Ziel: Ihr Business effizienter machen.",
+    "remind": {
+      "name": "SerahrRemind",
+      "tagline": "Nie wieder vergessene Termine",
+      "description": "Automatische Termin-Erinnerungen per SMS und E-Mail für Praxen und Dienstleister. Reduzieren Sie No-Shows und sparen Sie wertvolle Zeit.",
+      "link": "Mehr erfahren"
+    },
+    "chat": {
+      "name": "SerahrChat",
+      "tagline": "Ihr KI-FAQ-Assistent",
+      "description": "Ein intelligenter Chatbot, der die häufigsten Fragen Ihrer Kunden sofort beantwortet. Einfach einzurichten, rund um die Uhr verfügbar.",
+      "link": "Mehr erfahren"
+    },
+    "count": {
+      "name": "SerahrCount",
+      "tagline": "Besucherzählung in Echtzeit",
+      "description": "Erfassen Sie Besucherströme live bei Events und Veranstaltungen. Datenbasierte Entscheidungen in Echtzeit.",
+      "link": "Mehr erfahren"
+    }
+  },
+  "trust": {
+    "item1_label": "Fokus",
+    "item1_text": "Kleine & mittlere Unternehmen",
+    "item2_label": "Ansatz",
+    "item2_text": "Einfach statt kompliziert",
+    "item3_label": "Entwicklung",
+    "item3_text": "Aus Deutschland"
+  },
+  "footer": {
+    "tagline": "Prototyping für Softwarelösungen.",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "contact": "Kontakt",
+    "copyright": "© {year} Thorsten Ahrens. Alle Rechte vorbehalten."
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Haben Sie Fragen zu unseren Produkten oder möchten Sie mehr erfahren? Schreiben Sie uns — wir melden uns zeitnah.",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "product": "Betrifft Produkt",
+    "product_none": "Allgemeine Anfrage",
+    "submit": "Nachricht senden",
+    "success": "Vielen Dank! Wir melden uns bei Ihnen.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+  },
+  "remind_page": {
+    "meta_title": "SerahrRemind — Automatische Termin-Erinnerungen",
+    "meta_description": "Reduzieren Sie No-Shows mit automatischen Erinnerungen per SMS und E-Mail. Für Praxen, Salons und Dienstleister.",
+    "headline": "Nie wieder vergessene Termine",
+    "subheadline": "Automatische Erinnerungen per SMS und E-Mail — damit Ihre Kunden pünktlich erscheinen und Sie weniger Leerlauf haben.",
+    "cta": "Jetzt starten",
+    "features": {
+      "title": "Was SerahrRemind kann",
+      "sms": {
+        "title": "SMS & E-Mail",
+        "text": "Erinnerungen über den Kanal, den Ihre Kunden bevorzugen."
+      },
+      "timing": {
+        "title": "Flexibles Timing",
+        "text": "24h vorher, 1h vorher — Sie bestimmen den Zeitpunkt."
+      },
+      "integration": {
+        "title": "Einfache Einrichtung",
+        "text": "In wenigen Minuten startklar. Keine technischen Vorkenntnisse nötig."
+      },
+      "analytics": {
+        "title": "Auswertungen",
+        "text": "Sehen Sie auf einen Blick, wie viele No-Shows Sie vermieden haben."
+      }
+    },
+    "audience": {
+      "title": "Perfekt für",
+      "items": "Arztpraxen, Zahnarztpraxen, Physiotherapie, Friseursalons, Kosmetikstudios, Beratungsunternehmen"
+    }
+  },
+  "chat_page": {
+    "meta_title": "SerahrChat — KI-gestützter FAQ-Chatbot",
+    "meta_description": "Ein intelligenter Chatbot, der die häufigsten Fragen Ihrer Kunden automatisch beantwortet. Einfach einzurichten, 24/7 verfügbar.",
+    "headline": "Ihr KI-FAQ-Assistent",
+    "subheadline": "Beantworten Sie Kundenfragen automatisch — rund um die Uhr, ohne zusätzliches Personal.",
+    "cta": "Jetzt starten",
+    "features": {
+      "title": "Was SerahrChat kann",
+      "ai": {
+        "title": "KI-gestützt",
+        "text": "Versteht natürliche Sprache und lernt aus Ihren FAQ-Dokumenten."
+      },
+      "setup": {
+        "title": "Schnelle Einrichtung",
+        "text": "FAQ-Dokument hochladen, Widget einbinden — fertig."
+      },
+      "widget": {
+        "title": "Überall einbindbar",
+        "text": "Ein kleines Script-Tag genügt — funktioniert auf jeder Website."
+      },
+      "managed": {
+        "title": "Managed Service",
+        "text": "Wir kümmern uns um Hosting, Updates und Wartung."
+      }
+    },
+    "audience": {
+      "title": "Perfekt für",
+      "items": "Kleine Unternehmen, Dienstleister, Online-Shops, Praxen, Vereine"
+    }
+  },
+  "count_page": {
+    "meta_title": "SerahrCount — Echtzeit-Besucherzählung",
+    "meta_description": "Erfassen Sie Besucherströme in Echtzeit. Für Events, Veranstaltungen und öffentliche Einrichtungen.",
+    "headline": "Besucherzählung in Echtzeit",
+    "subheadline": "Wissen Sie jederzeit, wie viele Besucher vor Ort sind — für bessere Planung und mehr Sicherheit.",
+    "cta": "Jetzt starten",
+    "features": {
+      "title": "Was SerahrCount kann",
+      "realtime": {
+        "title": "Echtzeit-Daten",
+        "text": "Live-Zählung mit sofortiger Anzeige auf jedem Gerät."
+      },
+      "simple": {
+        "title": "Einfache Bedienung",
+        "text": "Zählen per Klick — kein kompliziertes Setup nötig."
+      },
+      "history": {
+        "title": "Verlaufsdaten",
+        "text": "Analysieren Sie Besuchertrends über Tage, Wochen und Monate."
+      },
+      "share": {
+        "title": "Teilbare Anzeige",
+        "text": "Öffentliche Anzeige-URL für Besucher oder Behörden."
+      }
+    },
+    "audience": {
+      "title": "Perfekt für",
+      "items": "Events, Messen, Museen, öffentliche Einrichtungen, Festivals, Märkte"
+    }
+  },
+  "legal": {
+    "imprint_title": "Impressum",
+    "privacy_title": "Datenschutzerklärung",
+    "privacy_product_title": "Datenschutzerklärung — {product}",
+    "terms_title": "Allgemeine Geschäftsbedingungen — {product}",
+    "back": "Zurück zur Startseite",
+    "placeholder": "Diese Seite wird noch mit den rechtlichen Inhalten befüllt."
+  }
+}
