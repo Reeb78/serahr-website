@@ -4,6 +4,7 @@ import Image from "next/image";
 
 export default function Footer() {
   const t = useTranslations("footer");
+  const tNav = useTranslations("nav");
 
   return (
     <footer className="bg-serahr-deep text-white/80">
@@ -29,7 +30,7 @@ export default function Footer() {
           {/* Products */}
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-white/40">
-              Produkte
+              {tNav("products")}
             </p>
             <ul className="mt-4 space-y-3">
               <li>
@@ -42,18 +43,13 @@ export default function Footer() {
                   SerahrChat
                 </Link>
               </li>
-              <li>
-                <Link href="/count" className="text-sm transition-colors hover:text-white">
-                  SerahrCount
-                </Link>
-              </li>
             </ul>
           </div>
 
           {/* Legal & Contact */}
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-white/40">
-              Rechtliches
+              {t("legal_heading")}
             </p>
             <ul className="mt-4 space-y-3">
               <li>

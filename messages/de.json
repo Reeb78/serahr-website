@@ -11,7 +11,7 @@
   "hero": {
     "badge": "Prototyping für Softwarelösungen",
     "headline": "Individuelle Softwareentwicklung",
-    "subheadline": "Wir entwickeln individuelle Softwarelösungen — von der ersten Idee bis zum fertigen, betriebsbereiten Tool.",
+    "subheadline": "Sie haben die Idee — wir liefern das Tool. Persönliche Betreuung, kurze Wege und ein klarer Plan von Anfang an.",
     "cta": "Produkte entdecken",
     "cta_secondary": "Projekt anfragen"
   },
@@ -32,10 +32,10 @@
       "link": "Mehr erfahren"
     },
     "count": {
-      "name": "SerahrCount",
-      "tagline": "Besucherzählung für Veranstaltungen",
-      "description": "Echtzeit-Zählung mit Multi-Eingang-Support. Smartphone-tauglich mit Export und Auswertung für Events und öffentliche Einrichtungen.",
-      "link": "Mehr erfahren"
+      "name": "Ihr nächstes Produkt?",
+      "tagline": "Wir entwickeln Ihre Idee",
+      "description": "Sie haben eine Idee für ein Software-Tool? Wir setzen sie um — als Prototyp, MVP oder fertiges Produkt. Sprechen Sie uns an.",
+      "link": "Projekt anfragen"
     }
   },
   "stats": {
@@ -76,6 +76,7 @@
     "imprint": "Impressum",
     "privacy": "Datenschutz",
     "terms": "AGB",
+    "legal_heading": "Rechtliches",
     "contact": "Kontakt",
     "copyright": "© {year} Thorsten Ahrens. Alle Rechte vorbehalten."
   },
@@ -101,31 +102,84 @@
   "remind_page": {
     "meta_title": "SerahrRemind — Automatische Terminerinnerungen",
     "meta_description": "Reduzieren Sie No-Shows mit automatischen Erinnerungen per SMS, E-Mail und Anruf. Für Praxen, Salons und Dienstleister.",
-    "headline": "Nie wieder vergessene Termine",
-    "subheadline": "Automatische Erinnerungen per E-Mail, SMS und Anruf — damit Ihre Kunden pünktlich erscheinen und Sie weniger Leerlauf haben.",
-    "cta": "Jetzt starten",
+    "headline": "Termin-Erinnerungen leicht gemacht",
+    "subheadline": "Weniger No-Shows, bessere Kundenkommunikation — mit automatischen Erinnerungen per E-Mail, SMS und Anruf.",
+    "cta": "Demo testen",
+    "cta_secondary": "Kontakt aufnehmen",
     "features": {
-      "title": "Was SerahrRemind kann",
-      "sms": {
-        "title": "E-Mail, SMS & Anruf",
-        "text": "Erinnerungen über den Kanal, den Ihre Kunden bevorzugen — inklusive Text-to-Speech Anrufe."
+      "title": "Alles, was Sie brauchen",
+      "reminders": {
+        "title": "Automatische Erinnerungen",
+        "text": "E-Mail-Erinnerungen werden automatisch versendet. SMS und Text-to-Speech Anrufe als zusätzliche Kanäle verfügbar."
       },
-      "timing": {
-        "title": "Automatische Sequenzen",
-        "text": "24h vorher, 1h vorher — Sie bestimmen den Zeitpunkt und die Reihenfolge."
+      "appointments": {
+        "title": "Terminverwaltung",
+        "text": "Übersichtliche Verwaltung aller Termine mit Status-Tracking, Filteroptionen und Kalenderansicht."
       },
-      "integration": {
-        "title": "Kalender-Integration",
-        "text": "Nahtlose Anbindung an Ihren bestehenden Kalender. In wenigen Minuten startklar."
+      "clients": {
+        "title": "Kundenverwaltung",
+        "text": "Zentrale Kundendatenbank mit Kontaktdaten, Präferenzen und Terminhistorie."
       },
-      "analytics": {
-        "title": "Auswertungen",
-        "text": "Sehen Sie auf einen Blick, wie viele No-Shows Sie vermieden haben."
+      "multitenancy": {
+        "title": "Mandantenfähig",
+        "text": "Perfekt für Unternehmensgruppen und Filialnetze. Jeder Standort hat eigene Daten und Einstellungen."
+      },
+      "privacy": {
+        "title": "DSGVO-konform",
+        "text": "Verschlüsselte Übertragung, deutscher Serverstandort und Audit-Log für Nachvollziehbarkeit."
+      },
+      "sequences": {
+        "title": "Flexible Sequenzen",
+        "text": "24h vorher, 1h vorher — Sie bestimmen den Zeitpunkt, den Kanal und die Reihenfolge."
       }
+    },
+    "pricing": {
+      "title": "Einfache, transparente Preise",
+      "subtitle": "Finale Preise werden nach der Beta-Phase veröffentlicht. Testen Sie die Demo schon jetzt kostenlos.",
+      "basis": {
+        "name": "Basis",
+        "users": "2 Benutzer",
+        "clients": "50 Kunden",
+        "locations": "1 Standort, 5 Räume",
+        "sms": "10 SMS + 10 Anrufe / Monat",
+        "highlight": "E-Mail unbegrenzt"
+      },
+      "standard": {
+        "name": "Standard",
+        "users": "5 Benutzer",
+        "clients": "100 Kunden",
+        "locations": "1 Standort, 10 Räume",
+        "sms": "50 SMS + 50 Anrufe / Monat",
+        "highlight": "MFA, Datenimport, 2. Erinnerung"
+      },
+      "pro": {
+        "name": "Pro",
+        "users": "50 Benutzer",
+        "clients": "Unbegrenzt Kunden",
+        "locations": "5 Standorte",
+        "sms": "500 SMS + 500 Anrufe / Monat",
+        "highlight": "Eigenes Branding, Ticket-Support"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "users": "Unbegrenzt",
+        "clients": "Unbegrenzt",
+        "locations": "Unbegrenzt",
+        "sms": "Unbegrenzt",
+        "highlight": "Account Manager, SLA, individuelle Anpassungen"
+      },
+      "coming_soon": "Preise folgen",
+      "demo_note": "Die Demo zeigt alle Funktionen und Konfigurationsmöglichkeiten. SMS- und Anruf-Versand sind in der Demo nicht aktiv — nur E-Mail-Erinnerungen werden versendet."
     },
     "audience": {
       "title": "Perfekt für",
       "items": "Arztpraxen, Zahnarztpraxen, Physiotherapie, Friseursalons, Kosmetikstudios, Beratungsunternehmen"
+    },
+    "demo": {
+      "title": "Jetzt kostenlos testen",
+      "text": "Testen Sie SerahrRemind mit der öffentlichen Demo. Nur Testdaten verwenden — alle Daten werden stündlich zurückgesetzt.",
+      "cta": "Demo öffnen",
+      "note": "Keine Registrierung nötig. Demo-Zugangsdaten auf der Login-Seite."
     }
   },
   "chat_page": {

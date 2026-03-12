@@ -11,7 +11,7 @@ import CountUp from "@/components/CountUp";
 import {
   BellRing,
   MessageSquare,
-  BarChart3,
+  Lightbulb,
   MessageCircle,
   ClipboardList,
   Code2,
@@ -37,7 +37,7 @@ export default function Home({
   const products = [
     { key: "remind" as const, icon: <BellRing className="h-6 w-6 text-serahr-medium" />, href: "/remind" },
     { key: "chat" as const, icon: <MessageSquare className="h-6 w-6 text-serahr-medium" />, href: "/chat" },
-    { key: "count" as const, icon: <BarChart3 className="h-6 w-6 text-serahr-medium" />, href: "/count" },
+    { key: "count" as const, icon: <Lightbulb className="h-6 w-6 text-amber-500" />, href: "/kontakt" },
   ];
 
   return (
@@ -74,31 +74,40 @@ export default function Home({
           </ScrollReveal>
 
           <div className="mt-16 grid gap-8 sm:grid-cols-3">
-            {products.map((product, i) => (
-              <ScrollReveal key={product.key} delay={i + 1}>
-                <Link
-                  href={product.href}
-                  className="card-glow group block h-full rounded-2xl border border-serahr-ice bg-gradient-to-b from-white to-serahr-ice/30 p-8"
-                >
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-serahr-ice transition-transform group-hover:scale-110">
-                    {product.icon}
-                  </div>
-                  <h3 className="mt-6 font-heading text-xl font-bold text-serahr-deep">
-                    {t(`products.${product.key}.name`)}
-                  </h3>
-                  <p className="mt-2 text-sm font-semibold text-serahr-bright">
-                    {t(`products.${product.key}.tagline`)}
-                  </p>
-                  <p className="mt-4 text-sm leading-relaxed text-muted">
-                    {t(`products.${product.key}.description`)}
-                  </p>
-                  <div className="mt-6 flex items-center gap-1 text-sm font-semibold text-serahr-medium">
-                    {t(`products.${product.key}.link`)}
-                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </div>
-                </Link>
-              </ScrollReveal>
-            ))}
+            {products.map((product, i) => {
+              const isIdea = product.key === "count";
+              return (
+                <ScrollReveal key={product.key} delay={i + 1}>
+                  <Link
+                    href={product.href}
+                    className={`group block h-full rounded-2xl p-8 ${
+                      isIdea
+                        ? "border-2 border-dashed border-serahr-medium/30 bg-serahr-ice/20"
+                        : "card-glow border border-serahr-ice bg-gradient-to-b from-white to-serahr-ice/30"
+                    }`}
+                  >
+                    <div className={`flex h-14 w-14 items-center justify-center rounded-2xl transition-transform group-hover:scale-110 ${
+                      isIdea ? "bg-amber-50" : "bg-serahr-ice"
+                    }`}>
+                      {product.icon}
+                    </div>
+                    <h3 className="mt-6 font-heading text-xl font-bold text-serahr-deep">
+                      {t(`products.${product.key}.name`)}
+                    </h3>
+                    <p className="mt-2 text-sm font-semibold text-serahr-bright">
+                      {t(`products.${product.key}.tagline`)}
+                    </p>
+                    <p className="mt-4 text-sm leading-relaxed text-muted">
+                      {t(`products.${product.key}.description`)}
+                    </p>
+                    <div className="mt-6 flex items-center gap-1 text-sm font-semibold text-serahr-medium">
+                      {t(`products.${product.key}.link`)}
+                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </Link>
+                </ScrollReveal>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -216,32 +225,28 @@ export default function Home({
       </section>
 
       {/* ═══ Trust ═══ */}
-      <section className="border-y border-serahr-ice bg-serahr-ice/30 py-16">
+      <section className="border-y border-serahr-ice bg-serahr-ice/30 py-20">
         <ScrollReveal>
-          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-6 text-center sm:grid-cols-3">
-            <div className="flex flex-col items-center">
-              <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-white shadow-sm">
-                <ShieldCheck className="h-6 w-6 text-serahr-medium" />
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 px-6 sm:grid-cols-3">
+            {([
+              { icon: <ShieldCheck className="h-16 w-16" />, labelKey: "item1_label" as const, textKey: "item1_text" as const },
+              { icon: <UserCheck className="h-16 w-16" />, labelKey: "item2_label" as const, textKey: "item2_text" as const },
+              { icon: <HeadphonesIcon className="h-16 w-16" />, labelKey: "item3_label" as const, textKey: "item3_text" as const },
+            ]).map((item) => (
+              <div key={item.labelKey} className="relative overflow-hidden rounded-2xl bg-white p-8 text-center shadow-sm">
+                <div className="pointer-events-none absolute right-3 top-3 text-serahr-bright/[0.07]">
+                  {item.icon}
+                </div>
+                <div className="relative">
+                  <p className="font-heading text-xl font-extrabold text-serahr-deep">
+                    {t(`trust.${item.labelKey}`)}
+                  </p>
+                  <p className="mt-2 text-sm text-muted">
+                    {t(`trust.${item.textKey}`)}
+                  </p>
+                </div>
               </div>
-              <p className="font-heading text-xl font-extrabold text-serahr-deep">{t("trust.item1_label")}</p>
-              <p className="mt-2 text-sm text-muted">{t("trust.item1_text")}</p>
-            </div>
-            <div className="relative flex flex-col items-center">
-              <div className="absolute -left-4 top-0 hidden h-full w-px bg-serahr-medium/15 sm:block" />
-              <div className="absolute -right-4 top-0 hidden h-full w-px bg-serahr-medium/15 sm:block" />
-              <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-white shadow-sm">
-                <UserCheck className="h-6 w-6 text-serahr-medium" />
-              </div>
-              <p className="font-heading text-xl font-extrabold text-serahr-deep">{t("trust.item2_label")}</p>
-              <p className="mt-2 text-sm text-muted">{t("trust.item2_text")}</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-white shadow-sm">
-                <HeadphonesIcon className="h-6 w-6 text-serahr-medium" />
-              </div>
-              <p className="font-heading text-xl font-extrabold text-serahr-deep">{t("trust.item3_label")}</p>
-              <p className="mt-2 text-sm text-muted">{t("trust.item3_text")}</p>
-            </div>
+            ))}
           </div>
         </ScrollReveal>
       </section>

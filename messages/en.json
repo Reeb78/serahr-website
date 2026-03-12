@@ -11,7 +11,7 @@
   "hero": {
     "badge": "Prototyping for Software Solutions",
     "headline": "Custom Software Development",
-    "subheadline": "We develop custom software solutions — from the first idea to the finished, production-ready tool.",
+    "subheadline": "You have the idea — we deliver the tool. Personal support, short lines, and a clear plan from day one.",
     "cta": "Explore Products",
     "cta_secondary": "Request a Project"
   },
@@ -32,10 +32,10 @@
       "link": "Learn more"
     },
     "count": {
-      "name": "SerahrCount",
-      "tagline": "Visitor Counting for Events",
-      "description": "Real-time counting with multi-entrance support. Smartphone-ready with export and analytics for events and public facilities.",
-      "link": "Learn more"
+      "name": "Your Next Product?",
+      "tagline": "We build your idea",
+      "description": "Have an idea for a software tool? We'll build it — as a prototype, MVP, or finished product. Get in touch.",
+      "link": "Request a Project"
     }
   },
   "stats": {
@@ -76,6 +76,7 @@
     "imprint": "Imprint",
     "privacy": "Privacy Policy",
     "terms": "Terms",
+    "legal_heading": "Legal",
     "contact": "Contact",
     "copyright": "© {year} Thorsten Ahrens. All rights reserved."
   },
@@ -101,31 +102,84 @@
   "remind_page": {
     "meta_title": "SerahrRemind — Automatic Appointment Reminders",
     "meta_description": "Reduce no-shows with automatic reminders via SMS, email, and phone calls. For practices, salons, and service providers.",
-    "headline": "Never Miss an Appointment Again",
-    "subheadline": "Automatic reminders via email, SMS, and phone calls — so your customers show up on time and you have less downtime.",
-    "cta": "Get Started",
+    "headline": "Appointment Reminders Made Easy",
+    "subheadline": "Fewer no-shows, better client communication — with automatic reminders via email, SMS, and phone calls.",
+    "cta": "Try Demo",
+    "cta_secondary": "Get in Touch",
     "features": {
-      "title": "What SerahrRemind Does",
-      "sms": {
-        "title": "Email, SMS & Phone Calls",
-        "text": "Reminders via the channel your customers prefer — including text-to-speech calls."
+      "title": "Everything You Need",
+      "reminders": {
+        "title": "Automatic Reminders",
+        "text": "Email reminders are sent automatically. SMS and text-to-speech calls available as additional channels."
       },
-      "timing": {
-        "title": "Automated Sequences",
-        "text": "24h before, 1h before — you decide the timing and order."
+      "appointments": {
+        "title": "Appointment Management",
+        "text": "Clear overview of all appointments with status tracking, filters, and calendar view."
       },
-      "integration": {
-        "title": "Calendar Integration",
-        "text": "Seamless connection to your existing calendar. Ready in minutes."
+      "clients": {
+        "title": "Client Management",
+        "text": "Central client database with contact details, preferences, and appointment history."
       },
-      "analytics": {
-        "title": "Analytics",
-        "text": "See at a glance how many no-shows you've prevented."
+      "multitenancy": {
+        "title": "Multi-Tenant",
+        "text": "Perfect for business groups and franchises. Each location has its own data and settings."
+      },
+      "privacy": {
+        "title": "GDPR Compliant",
+        "text": "Encrypted transmission, German server location, and audit log for traceability."
+      },
+      "sequences": {
+        "title": "Flexible Sequences",
+        "text": "24h before, 1h before — you decide the timing, channel, and order."
       }
+    },
+    "pricing": {
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Final pricing will be published after the beta phase. Try the demo for free right now.",
+      "basis": {
+        "name": "Basis",
+        "users": "2 Users",
+        "clients": "50 Clients",
+        "locations": "1 Location, 5 Rooms",
+        "sms": "10 SMS + 10 Calls / month",
+        "highlight": "Unlimited email"
+      },
+      "standard": {
+        "name": "Standard",
+        "users": "5 Users",
+        "clients": "100 Clients",
+        "locations": "1 Location, 10 Rooms",
+        "sms": "50 SMS + 50 Calls / month",
+        "highlight": "MFA, data import, 2nd reminder"
+      },
+      "pro": {
+        "name": "Pro",
+        "users": "50 Users",
+        "clients": "Unlimited Clients",
+        "locations": "5 Locations",
+        "sms": "500 SMS + 500 Calls / month",
+        "highlight": "Custom branding, ticket support"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "users": "Unlimited",
+        "clients": "Unlimited",
+        "locations": "Unlimited",
+        "sms": "Unlimited",
+        "highlight": "Account manager, SLA, custom features"
+      },
+      "coming_soon": "Pricing coming soon",
+      "demo_note": "The demo shows all features and configuration options. SMS and phone calls are not active in the demo — only email reminders are sent."
     },
     "audience": {
       "title": "Perfect For",
       "items": "Medical practices, Dental offices, Physiotherapy, Hair salons, Beauty studios, Consulting firms"
+    },
+    "demo": {
+      "title": "Try It Free",
+      "text": "Test SerahrRemind with the public demo. Use test data only — all data is reset every hour.",
+      "cta": "Open Demo",
+      "note": "No registration needed. Demo credentials on the login page."
     }
   },
   "chat_page": {
