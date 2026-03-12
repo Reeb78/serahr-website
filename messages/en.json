@@ -1,4 +1,7 @@
 {
+  "common": {
+    "contact_cta": "Get in Touch"
+  },
   "meta": {
     "title": "Serahr — Custom Software Development",
     "description": "Prototyping for software solutions. We develop custom software solutions — from the first idea to the finished, production-ready tool."
@@ -39,7 +42,7 @@
     }
   },
   "stats": {
-    "tools_value": "3+",
+    "tools_value": "2+",
     "tools_label": "Tools developed",
     "origin_value": "DE",
     "origin_label": "Developed in Germany",
@@ -107,6 +110,7 @@
     "cta": "Try Demo",
     "cta_secondary": "Get in Touch",
     "features": {
+      "label": "Features",
       "title": "Everything You Need",
       "reminders": {
         "title": "Automatic Reminders",
@@ -134,6 +138,7 @@
       }
     },
     "pricing": {
+      "label": "Pricing",
       "title": "Simple, Transparent Pricing",
       "subtitle": "Final pricing will be published after the beta phase. Try the demo for free right now.",
       "basis": {
@@ -189,6 +194,7 @@
     "subheadline": "Answer customer questions automatically — around the clock, multilingual, and integrated in just 5 minutes.",
     "cta": "Get Started",
     "features": {
+      "label": "Features",
       "title": "What SerahrChat Does",
       "ai": {
         "title": "AI-Powered Answers",

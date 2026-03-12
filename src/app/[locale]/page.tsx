@@ -118,7 +118,7 @@ export default function Home({
           <div className="mx-auto grid max-w-4xl grid-cols-2 gap-8 px-6 text-center sm:grid-cols-4">
             <div className="flex flex-col items-center">
               <Wrench className="mb-2 h-5 w-5 text-serahr-bright" />
-              <p className="font-heading text-3xl font-extrabold text-serahr-deep"><CountUp end={3} suffix="+" /></p>
+              <p className="font-heading text-3xl font-extrabold text-serahr-deep"><CountUp end={2} suffix="+" /></p>
               <p className="mt-1 text-sm text-muted">{t("stats.tools_label")}</p>
             </div>
             <div className="flex flex-col items-center">

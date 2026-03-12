@@ -1,4 +1,7 @@
 {
+  "common": {
+    "contact_cta": "Kontakt aufnehmen"
+  },
   "meta": {
     "title": "Serahr — Individuelle Softwareentwicklung",
     "description": "Prototyping für Softwarelösungen. Wir entwickeln individuelle Softwarelösungen — von der ersten Idee bis zum fertigen, betriebsbereiten Tool."
@@ -39,7 +42,7 @@
     }
   },
   "stats": {
-    "tools_value": "3+",
+    "tools_value": "2+",
     "tools_label": "Tools entwickelt",
     "origin_value": "DE",
     "origin_label": "Entwickelt in Deutschland",
@@ -107,6 +110,7 @@
     "cta": "Demo testen",
     "cta_secondary": "Kontakt aufnehmen",
     "features": {
+      "label": "Features",
       "title": "Alles, was Sie brauchen",
       "reminders": {
         "title": "Automatische Erinnerungen",
@@ -134,6 +138,7 @@
       }
     },
     "pricing": {
+      "label": "Preise",
       "title": "Einfache, transparente Preise",
       "subtitle": "Finale Preise werden nach der Beta-Phase veröffentlicht. Testen Sie die Demo schon jetzt kostenlos.",
       "basis": {
@@ -189,6 +194,7 @@
     "subheadline": "Beantworten Sie Kundenfragen automatisch — rund um die Uhr, mehrsprachig und in nur 5 Minuten integriert.",
     "cta": "Jetzt starten",
     "features": {
+      "label": "Features",
       "title": "Was SerahrChat kann",
       "ai": {
         "title": "KI-gestützte Antworten",
