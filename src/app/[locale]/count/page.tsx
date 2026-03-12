@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
+import { Activity, DoorOpen, Download, Share2 } from "lucide-react";
 import ProductPage from "@/components/ProductPage";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -17,10 +18,10 @@ export default function CountPage({ params }: { params: { locale: string } }) {
       appUrl="https://serahrcount.serahr.de"
       color="serahr-deep"
       features={[
-        { key: "realtime", icon: "📊" },
-        { key: "simple", icon: "👆" },
-        { key: "history", icon: "📅" },
-        { key: "share", icon: "🔗" },
+        { key: "realtime", icon: <Activity className="h-6 w-6 text-serahr-medium" /> },
+        { key: "simple", icon: <DoorOpen className="h-6 w-6 text-serahr-medium" /> },
+        { key: "history", icon: <Download className="h-6 w-6 text-serahr-medium" /> },
+        { key: "share", icon: <Share2 className="h-6 w-6 text-serahr-medium" /> },
       ]}
     />
   );

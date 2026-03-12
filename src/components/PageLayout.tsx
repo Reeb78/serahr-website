@@ -1,5 +1,6 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 
 export default function PageLayout({
   children,
@@ -8,6 +9,7 @@ export default function PageLayout({
 }) {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <ScrollToTop />
       <Nav />
       <main className="pt-16">{children}</main>
       <Footer />

@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
+import { Smartphone, Timer, Calendar, TrendingUp } from "lucide-react";
 import ProductPage from "@/components/ProductPage";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -17,10 +18,10 @@ export default function RemindPage({ params }: { params: { locale: string } }) {
       appUrl="https://remindme.serahr.de"
       color="serahr-bright"
       features={[
-        { key: "sms", icon: "📱" },
-        { key: "timing", icon: "⏰" },
-        { key: "integration", icon: "🚀" },
-        { key: "analytics", icon: "📈" },
+        { key: "sms", icon: <Smartphone className="h-6 w-6 text-serahr-medium" /> },
+        { key: "timing", icon: <Timer className="h-6 w-6 text-serahr-medium" /> },
+        { key: "integration", icon: <Calendar className="h-6 w-6 text-serahr-medium" /> },
+        { key: "analytics", icon: <TrendingUp className="h-6 w-6 text-serahr-medium" /> },
       ]}
     />
   );

@@ -27,7 +27,7 @@ export default function LegalPage({
           <h1 className="text-3xl font-bold tracking-tight text-serahr-deep sm:text-4xl">
             {title}
           </h1>
-          <div className="mt-10 prose prose-zinc max-w-none text-muted leading-relaxed">
+          <div className="mt-10 legal-content max-w-none">
             {children || (
               <p className="rounded-2xl border border-serahr-ice bg-serahr-ice/30 p-8 text-center">
                 {t("placeholder")}

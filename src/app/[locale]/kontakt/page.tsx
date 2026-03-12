@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { Link } from "@/i18n/navigation";
 import PageLayout from "@/components/PageLayout";
 
 export default function KontaktPage() {
@@ -13,87 +14,107 @@ export default function KontaktPage() {
     setStatus("sending");
 
     // TODO: Connect to Supabase when DB is set up
-    // For now, simulate a submission
     await new Promise((resolve) => setTimeout(resolve, 1000));
     setStatus("success");
   }
 
+  const inputClass =
+    "mt-2 block w-full rounded-xl border border-serahr-ice bg-white px-4 py-3 text-sm text-foreground shadow-sm outline-none transition-all focus:border-serahr-bright focus:ring-2 focus:ring-serahr-bright/20";
+
   return (
     <PageLayout>
-      <section className="px-6 py-24 sm:py-32">
-        <div className="mx-auto max-w-xl">
-          <h1 className="text-3xl font-bold tracking-tight text-serahr-deep sm:text-4xl">
+      {/* Hero */}
+      <section className="hero-gradient px-6 py-24 sm:py-32">
+        <div className="mx-auto max-w-xl text-center">
+          <h1 className="font-heading text-4xl font-extrabold tracking-tight text-serahr-deep sm:text-5xl">
             {t("title")}
           </h1>
-          <p className="mt-4 text-lg text-muted">
+          <p className="mx-auto mt-6 max-w-lg text-lg leading-relaxed text-muted">
             {t("subtitle")}
           </p>
+        </div>
+      </section>
 
+      {/* Form */}
+      <section className="bg-white px-6 py-16">
+        <div className="mx-auto max-w-xl">
           {status === "success" ? (
-            <div className="mt-10 rounded-2xl border border-green-200 bg-green-50 p-8 text-center">
-              <p className="text-lg font-medium text-green-800">{t("success")}</p>
+            <div className="rounded-2xl border border-green-200 bg-green-50 p-10 text-center">
+              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-green-100 text-2xl">
+                ✓
+              </div>
+              <p className="mt-4 text-lg font-medium text-green-800">{t("success")}</p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="mt-10 space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-serahr-deep">
-                  {t("name")}
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  className="mt-2 block w-full rounded-xl border border-serahr-ice bg-white px-4 py-3 text-sm text-foreground outline-none transition-colors focus:border-serahr-bright focus:ring-1 focus:ring-serahr-bright"
-                />
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid gap-6 sm:grid-cols-2">
+                <div>
+                  <label htmlFor="firstName" className="block text-sm font-medium text-serahr-deep">
+                    {t("firstName")}
+                  </label>
+                  <input type="text" id="firstName" name="firstName" required className={inputClass} />
+                </div>
+                <div>
+                  <label htmlFor="lastName" className="block text-sm font-medium text-serahr-deep">
+                    {t("lastName")}
+                  </label>
+                  <input type="text" id="lastName" name="lastName" required className={inputClass} />
+                </div>
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-serahr-deep">
                   {t("email")}
                 </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  className="mt-2 block w-full rounded-xl border border-serahr-ice bg-white px-4 py-3 text-sm text-foreground outline-none transition-colors focus:border-serahr-bright focus:ring-1 focus:ring-serahr-bright"
-                />
+                <input type="email" id="email" name="email" required className={inputClass} />
               </div>
 
               <div>
-                <label htmlFor="product" className="block text-sm font-medium text-serahr-deep">
-                  {t("product")}
+                <label htmlFor="topic" className="block text-sm font-medium text-serahr-deep">
+                  {t("topic")}
                 </label>
-                <select
-                  id="product"
-                  name="product"
-                  className="mt-2 block w-full rounded-xl border border-serahr-ice bg-white px-4 py-3 text-sm text-foreground outline-none transition-colors focus:border-serahr-bright focus:ring-1 focus:ring-serahr-bright"
-                >
-                  <option value="">{t("product_none")}</option>
-                  <option value="remind">SerahrRemind</option>
-                  <option value="chat">SerahrChat</option>
-                  <option value="count">SerahrCount</option>
+                <select id="topic" name="topic" required className={inputClass}>
+                  <option value="">{t("topic_none")}</option>
+                  <option value="project">{t("topic_project")}</option>
+                  <option value="question">{t("topic_question")}</option>
+                  <option value="other">{t("topic_other")}</option>
                 </select>
+              </div>
+
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium text-serahr-deep">
+                  {t("subject")}
+                </label>
+                <input type="text" id="subject" name="subject" required className={inputClass} />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-serahr-deep">
                   {t("message")}
                 </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={5}
+                <textarea id="message" name="message" rows={5} required className={`${inputClass} resize-none`} />
+              </div>
+
+              <div className="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  id="consent"
+                  name="consent"
                   required
-                  className="mt-2 block w-full resize-none rounded-xl border border-serahr-ice bg-white px-4 py-3 text-sm text-foreground outline-none transition-colors focus:border-serahr-bright focus:ring-1 focus:ring-serahr-bright"
+                  className="mt-1 h-4 w-4 rounded border-serahr-ice text-serahr-deep accent-serahr-deep"
                 />
+                <label htmlFor="consent" className="text-sm leading-relaxed text-muted">
+                  {t("consent")}{" "}
+                  <Link href="/datenschutz" className="text-serahr-medium hover:text-serahr-deep">
+                    {t("consent_link")}
+                  </Link>
+                </label>
               </div>
 
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="inline-flex h-12 w-full items-center justify-center rounded-full bg-serahr-deep px-8 text-sm font-medium text-white shadow-lg shadow-serahr-deep/20 transition-all hover:bg-serahr-medium disabled:opacity-50"
+                className="inline-flex h-12 w-full items-center justify-center rounded-full bg-serahr-deep px-8 text-sm font-semibold text-white shadow-lg shadow-serahr-deep/20 transition-all hover:bg-serahr-medium hover:shadow-serahr-medium/30 hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0"
               >
                 {status === "sending" ? "..." : t("submit")}
               </button>

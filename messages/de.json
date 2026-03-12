@@ -1,50 +1,75 @@
 {
   "meta": {
-    "title": "Serahr — Digitale Lösungen für Ihr Business",
-    "description": "Prototyping für Softwarelösungen. Termin-Erinnerungen, KI-Chatbots und Besucherzählung — modern, sicher und made in Germany."
+    "title": "Serahr — Individuelle Softwareentwicklung",
+    "description": "Prototyping für Softwarelösungen. Wir entwickeln individuelle Softwarelösungen — von der ersten Idee bis zum fertigen, betriebsbereiten Tool."
   },
   "nav": {
     "home": "Home",
     "products": "Produkte",
-    "about": "Über uns",
     "contact": "Kontakt"
   },
   "hero": {
     "badge": "Prototyping für Softwarelösungen",
-    "headline": "Digitale Tools, die Ihren Alltag vereinfachen",
-    "subheadline": "Automatisierte Termin-Erinnerungen, intelligente Chatbots und Echtzeit-Besucherzählung — modern, sicher und einfach zu bedienen.",
+    "headline": "Individuelle Softwareentwicklung",
+    "subheadline": "Wir entwickeln individuelle Softwarelösungen — von der ersten Idee bis zum fertigen, betriebsbereiten Tool.",
     "cta": "Produkte entdecken",
-    "cta_secondary": "Kontakt aufnehmen"
+    "cta_secondary": "Projekt anfragen"
   },
   "products": {
+    "section_label": "Lösungen",
     "title": "Unsere Produkte",
-    "subtitle": "Drei Lösungen, ein Ziel: Ihr Business effizienter machen.",
+    "subtitle": "Software, die Probleme löst.",
     "remind": {
       "name": "SerahrRemind",
-      "tagline": "Nie wieder vergessene Termine",
-      "description": "Automatische Termin-Erinnerungen per SMS und E-Mail für Praxen und Dienstleister. Reduzieren Sie No-Shows und sparen Sie wertvolle Zeit.",
+      "tagline": "Automatische Terminerinnerungen",
+      "description": "Automatische Erinnerungen per E-Mail, SMS und Anruf (TTS). Automatische Sequenzen und Kalender-Integration für Praxen und Dienstleister.",
       "link": "Mehr erfahren"
     },
     "chat": {
       "name": "SerahrChat",
-      "tagline": "Ihr KI-FAQ-Assistent",
-      "description": "Ein intelligenter Chatbot, der die häufigsten Fragen Ihrer Kunden sofort beantwortet. Einfach einzurichten, rund um die Uhr verfügbar.",
+      "tagline": "KI-Chatbot für Websites",
+      "description": "KI-gestützte Antworten, mehrsprachig (DE/EN), 5-Minuten-Integration auf jeder Website. Volle Datenkontrolle als Managed Service.",
       "link": "Mehr erfahren"
     },
     "count": {
       "name": "SerahrCount",
-      "tagline": "Besucherzählung in Echtzeit",
-      "description": "Erfassen Sie Besucherströme live bei Events und Veranstaltungen. Datenbasierte Entscheidungen in Echtzeit.",
+      "tagline": "Besucherzählung für Veranstaltungen",
+      "description": "Echtzeit-Zählung mit Multi-Eingang-Support. Smartphone-tauglich mit Export und Auswertung für Events und öffentliche Einrichtungen.",
       "link": "Mehr erfahren"
     }
   },
+  "stats": {
+    "tools_value": "3+",
+    "tools_label": "Tools entwickelt",
+    "origin_value": "DE",
+    "origin_label": "Entwickelt in Deutschland",
+    "support_value": "1:1",
+    "support_label": "Persönliche Betreuung",
+    "response_value": "24h",
+    "response_label": "Antwortzeit Support"
+  },
+  "process": {
+    "section_label": "Prozess",
+    "title": "Von der Idee zum fertigen Produkt",
+    "subtitle": "In vier Schritten zu Ihrer individuellen Lösung — transparent, planbar und mit persönlicher Betreuung.",
+    "step1_title": "Erstgespräch",
+    "step1_text": "Wir lernen Ihr Business kennen, klären Ihre Anforderungen und definieren gemeinsam die Ziele. Sie erhalten eine erste Einschätzung zu Machbarkeit und Aufwand.",
+    "step2_title": "Konzept & Planung",
+    "step2_text": "Basierend auf dem Gespräch erstellen wir einen detaillierten Plan: Funktionsumfang, technische Architektur, Zeitrahmen und transparente Kostenübersicht.",
+    "step3_title": "Prototyp & Iteration",
+    "step3_text": "Sie erhalten schnell einen funktionierenden Prototyp. In kurzen Feedback-Zyklen verfeinern wir das Produkt, bis es genau Ihren Vorstellungen entspricht.",
+    "step4_title": "Go-Live & Support",
+    "step4_text": "Wir begleiten den Launch, schulen Sie im Umgang mit dem Tool und stehen auch danach als persönlicher Ansprechpartner für Support und Weiterentwicklung bereit.",
+    "cta": "Erstgespräch vereinbaren",
+    "cta_note": "Unverbindlich und kostenlos. Antwort innerhalb von 24 Stunden."
+  },
   "trust": {
-    "item1_label": "Fokus",
-    "item1_text": "Kleine & mittlere Unternehmen",
-    "item2_label": "Ansatz",
-    "item2_text": "Einfach statt kompliziert",
-    "item3_label": "Entwicklung",
-    "item3_text": "Aus Deutschland"
+    "item1_label": "Sicher & transparent",
+    "item1_text": "DSGVO-konforme Entwicklung, faire Preise",
+    "item2_label": "Individuelle Beratung",
+    "item2_text": "Lösungen passend zu Ihrem Business",
+    "item3_label": "Persönlicher Ansprechpartner",
+    "item3_text": "Direkter Kontakt, keine Warteschleifen"
   },
   "footer": {
     "tagline": "Prototyping für Softwarelösungen.",
@@ -55,36 +80,43 @@
     "copyright": "© {year} Thorsten Ahrens. Alle Rechte vorbehalten."
   },
   "contact": {
-    "title": "Kontakt aufnehmen",
-    "subtitle": "Haben Sie Fragen zu unseren Produkten oder möchten Sie mehr erfahren? Schreiben Sie uns — wir melden uns zeitnah.",
-    "name": "Name",
+    "title": "Kontakt",
+    "subtitle": "Haben Sie Fragen oder möchten Sie ein Projekt besprechen? Schreiben Sie uns — wir melden uns innerhalb von 24 Stunden.",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
     "email": "E-Mail",
+    "topic": "Thema",
+    "topic_none": "— Bitte wählen —",
+    "topic_project": "Individuelle Software-Lösung / Prototyping",
+    "topic_question": "Frage zu einem bestehenden Serahr-Tool",
+    "topic_other": "Kooperation, Feedback oder Sonstiges",
+    "subject": "Betreff",
     "message": "Nachricht",
-    "product": "Betrifft Produkt",
-    "product_none": "Allgemeine Anfrage",
+    "consent": "Ich bin damit einverstanden, dass meine Daten zur Bearbeitung meiner Anfrage gespeichert werden.",
+    "consent_link": "Mehr Infos in der Datenschutzerklärung",
     "submit": "Nachricht senden",
-    "success": "Vielen Dank! Wir melden uns bei Ihnen.",
+    "success": "Vielen Dank! Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
     "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
   },
   "remind_page": {
-    "meta_title": "SerahrRemind — Automatische Termin-Erinnerungen",
-    "meta_description": "Reduzieren Sie No-Shows mit automatischen Erinnerungen per SMS und E-Mail. Für Praxen, Salons und Dienstleister.",
+    "meta_title": "SerahrRemind — Automatische Terminerinnerungen",
+    "meta_description": "Reduzieren Sie No-Shows mit automatischen Erinnerungen per SMS, E-Mail und Anruf. Für Praxen, Salons und Dienstleister.",
     "headline": "Nie wieder vergessene Termine",
-    "subheadline": "Automatische Erinnerungen per SMS und E-Mail — damit Ihre Kunden pünktlich erscheinen und Sie weniger Leerlauf haben.",
+    "subheadline": "Automatische Erinnerungen per E-Mail, SMS und Anruf — damit Ihre Kunden pünktlich erscheinen und Sie weniger Leerlauf haben.",
     "cta": "Jetzt starten",
     "features": {
       "title": "Was SerahrRemind kann",
       "sms": {
-        "title": "SMS & E-Mail",
-        "text": "Erinnerungen über den Kanal, den Ihre Kunden bevorzugen."
+        "title": "E-Mail, SMS & Anruf",
+        "text": "Erinnerungen über den Kanal, den Ihre Kunden bevorzugen — inklusive Text-to-Speech Anrufe."
       },
       "timing": {
-        "title": "Flexibles Timing",
-        "text": "24h vorher, 1h vorher — Sie bestimmen den Zeitpunkt."
+        "title": "Automatische Sequenzen",
+        "text": "24h vorher, 1h vorher — Sie bestimmen den Zeitpunkt und die Reihenfolge."
       },
       "integration": {
-        "title": "Einfache Einrichtung",
-        "text": "In wenigen Minuten startklar. Keine technischen Vorkenntnisse nötig."
+        "title": "Kalender-Integration",
+        "text": "Nahtlose Anbindung an Ihren bestehenden Kalender. In wenigen Minuten startklar."
       },
       "analytics": {
         "title": "Auswertungen",
@@ -97,28 +129,28 @@
     }
   },
   "chat_page": {
-    "meta_title": "SerahrChat — KI-gestützter FAQ-Chatbot",
-    "meta_description": "Ein intelligenter Chatbot, der die häufigsten Fragen Ihrer Kunden automatisch beantwortet. Einfach einzurichten, 24/7 verfügbar.",
-    "headline": "Ihr KI-FAQ-Assistent",
-    "subheadline": "Beantworten Sie Kundenfragen automatisch — rund um die Uhr, ohne zusätzliches Personal.",
+    "meta_title": "SerahrChat — KI-Chatbot für Websites",
+    "meta_description": "Ein KI-gestützter Chatbot, der Kundenfragen automatisch beantwortet. Mehrsprachig, 5-Minuten-Integration, volle Datenkontrolle.",
+    "headline": "KI-Chatbot für Ihre Website",
+    "subheadline": "Beantworten Sie Kundenfragen automatisch — rund um die Uhr, mehrsprachig und in nur 5 Minuten integriert.",
     "cta": "Jetzt starten",
     "features": {
       "title": "Was SerahrChat kann",
       "ai": {
-        "title": "KI-gestützt",
+        "title": "KI-gestützte Antworten",
         "text": "Versteht natürliche Sprache und lernt aus Ihren FAQ-Dokumenten."
       },
       "setup": {
-        "title": "Schnelle Einrichtung",
-        "text": "FAQ-Dokument hochladen, Widget einbinden — fertig."
-      },
-      "widget": {
-        "title": "Überall einbindbar",
+        "title": "5-Minuten-Integration",
         "text": "Ein kleines Script-Tag genügt — funktioniert auf jeder Website."
       },
+      "widget": {
+        "title": "Mehrsprachig (DE/EN)",
+        "text": "Beantwortet Fragen auf Deutsch und Englisch, automatisch erkannt."
+      },
       "managed": {
-        "title": "Managed Service",
-        "text": "Wir kümmern uns um Hosting, Updates und Wartung."
+        "title": "Volle Datenkontrolle",
+        "text": "Managed Service mit Hosting in Deutschland. Sie bestimmen, was der Bot weiß."
       }
     },
     "audience": {
@@ -128,27 +160,27 @@
   },
   "count_page": {
     "meta_title": "SerahrCount — Echtzeit-Besucherzählung",
-    "meta_description": "Erfassen Sie Besucherströme in Echtzeit. Für Events, Veranstaltungen und öffentliche Einrichtungen.",
+    "meta_description": "Erfassen Sie Besucherströme in Echtzeit. Multi-Eingang, Smartphone-tauglich, Export und Auswertung.",
     "headline": "Besucherzählung in Echtzeit",
     "subheadline": "Wissen Sie jederzeit, wie viele Besucher vor Ort sind — für bessere Planung und mehr Sicherheit.",
     "cta": "Jetzt starten",
     "features": {
       "title": "Was SerahrCount kann",
       "realtime": {
-        "title": "Echtzeit-Daten",
+        "title": "Echtzeit-Zählung",
         "text": "Live-Zählung mit sofortiger Anzeige auf jedem Gerät."
       },
       "simple": {
-        "title": "Einfache Bedienung",
-        "text": "Zählen per Klick — kein kompliziertes Setup nötig."
+        "title": "Multi-Eingang",
+        "text": "Mehrere Eingänge gleichzeitig zählen — alles synchron."
       },
       "history": {
-        "title": "Verlaufsdaten",
-        "text": "Analysieren Sie Besuchertrends über Tage, Wochen und Monate."
+        "title": "Export & Auswertung",
+        "text": "Analysieren Sie Besuchertrends und exportieren Sie Daten."
       },
       "share": {
-        "title": "Teilbare Anzeige",
-        "text": "Öffentliche Anzeige-URL für Besucher oder Behörden."
+        "title": "Smartphone-tauglich",
+        "text": "Zählen per Klick auf dem Handy. Öffentliche Anzeige-URL für Besucher oder Behörden."
       }
     },
     "audience": {
@@ -161,6 +193,7 @@
     "privacy_title": "Datenschutzerklärung",
     "privacy_product_title": "Datenschutzerklärung — {product}",
     "terms_title": "Allgemeine Geschäftsbedingungen — {product}",
+    "docs_product_title": "Dokumentation — {product}",
     "back": "Zurück zur Startseite",
     "placeholder": "Diese Seite wird noch mit den rechtlichen Inhalten befüllt."
   }

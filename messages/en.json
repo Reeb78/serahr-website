@@ -1,50 +1,75 @@
 {
   "meta": {
-    "title": "Serahr — Digital Solutions for Your Business",
-    "description": "Prototyping for software solutions. Appointment reminders, AI chatbots, and visitor counting — modern, secure, and made in Germany."
+    "title": "Serahr — Custom Software Development",
+    "description": "Prototyping for software solutions. We develop custom software solutions — from the first idea to the finished, production-ready tool."
   },
   "nav": {
     "home": "Home",
     "products": "Products",
-    "about": "About",
     "contact": "Contact"
   },
   "hero": {
     "badge": "Prototyping for Software Solutions",
-    "headline": "Digital Tools That Simplify Your Day",
-    "subheadline": "Automated appointment reminders, intelligent chatbots, and real-time visitor counting — modern, secure, and easy to use.",
+    "headline": "Custom Software Development",
+    "subheadline": "We develop custom software solutions — from the first idea to the finished, production-ready tool.",
     "cta": "Explore Products",
-    "cta_secondary": "Get in Touch"
+    "cta_secondary": "Request a Project"
   },
   "products": {
+    "section_label": "Solutions",
     "title": "Our Products",
-    "subtitle": "Three solutions, one goal: making your business more efficient.",
+    "subtitle": "Software that solves problems.",
     "remind": {
       "name": "SerahrRemind",
-      "tagline": "Never Miss an Appointment Again",
-      "description": "Automatic appointment reminders via SMS and email for practices and service providers. Reduce no-shows and save valuable time.",
+      "tagline": "Automatic Appointment Reminders",
+      "description": "Automatic reminders via email, SMS, and phone calls (TTS). Automated sequences and calendar integration for practices and service providers.",
       "link": "Learn more"
     },
     "chat": {
       "name": "SerahrChat",
-      "tagline": "Your AI FAQ Assistant",
-      "description": "An intelligent chatbot that instantly answers your customers' most common questions. Easy to set up, available around the clock.",
+      "tagline": "AI Chatbot for Websites",
+      "description": "AI-powered answers, multilingual (DE/EN), 5-minute integration on any website. Full data control as a managed service.",
       "link": "Learn more"
     },
     "count": {
       "name": "SerahrCount",
-      "tagline": "Real-Time Visitor Counting",
-      "description": "Track visitor flows live at events and venues. Data-driven decisions in real time.",
+      "tagline": "Visitor Counting for Events",
+      "description": "Real-time counting with multi-entrance support. Smartphone-ready with export and analytics for events and public facilities.",
       "link": "Learn more"
     }
   },
+  "stats": {
+    "tools_value": "3+",
+    "tools_label": "Tools developed",
+    "origin_value": "DE",
+    "origin_label": "Developed in Germany",
+    "support_value": "1:1",
+    "support_label": "Personal support",
+    "response_value": "24h",
+    "response_label": "Support response time"
+  },
+  "process": {
+    "section_label": "Process",
+    "title": "From Idea to Finished Product",
+    "subtitle": "Four steps to your custom solution — transparent, predictable, and with personal support.",
+    "step1_title": "Initial Meeting",
+    "step1_text": "We get to know your business, clarify your requirements, and define goals together. You receive an initial assessment of feasibility and effort.",
+    "step2_title": "Concept & Planning",
+    "step2_text": "Based on our conversation, we create a detailed plan: feature scope, technical architecture, timeline, and transparent cost overview.",
+    "step3_title": "Prototype & Iteration",
+    "step3_text": "You quickly receive a working prototype. In short feedback cycles, we refine the product until it matches your expectations exactly.",
+    "step4_title": "Go-Live & Support",
+    "step4_text": "We accompany the launch, train you on the tool, and remain your personal contact for support and further development.",
+    "cta": "Schedule a Meeting",
+    "cta_note": "No obligation, free of charge. Response within 24 hours."
+  },
   "trust": {
-    "item1_label": "Focus",
-    "item1_text": "Small & medium businesses",
-    "item2_label": "Approach",
-    "item2_text": "Simple, not complicated",
-    "item3_label": "Development",
-    "item3_text": "From Germany"
+    "item1_label": "Secure & Transparent",
+    "item1_text": "GDPR-compliant development, fair pricing",
+    "item2_label": "Individual Consulting",
+    "item2_text": "Solutions tailored to your business",
+    "item3_label": "Personal Contact",
+    "item3_text": "Direct contact, no waiting queues"
   },
   "footer": {
     "tagline": "Prototyping for software solutions.",
@@ -55,36 +80,43 @@
     "copyright": "© {year} Thorsten Ahrens. All rights reserved."
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "Have questions about our products or want to learn more? Write to us — we'll get back to you shortly.",
-    "name": "Name",
+    "title": "Contact",
+    "subtitle": "Have questions or want to discuss a project? Write to us — we'll respond within 24 hours.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
     "email": "Email",
+    "topic": "Topic",
+    "topic_none": "— Please select —",
+    "topic_project": "Custom Software Solution / Prototyping",
+    "topic_question": "Question about an existing Serahr tool",
+    "topic_other": "Cooperation, feedback, or other",
+    "subject": "Subject",
     "message": "Message",
-    "product": "Regarding product",
-    "product_none": "General inquiry",
+    "consent": "I agree that my data will be stored to process my inquiry.",
+    "consent_link": "More info in the Privacy Policy",
     "submit": "Send Message",
-    "success": "Thank you! We'll get back to you shortly.",
+    "success": "Thank you! We'll get back to you within 24 hours.",
     "error": "Something went wrong. Please try again."
   },
   "remind_page": {
     "meta_title": "SerahrRemind — Automatic Appointment Reminders",
-    "meta_description": "Reduce no-shows with automatic reminders via SMS and email. For practices, salons, and service providers.",
+    "meta_description": "Reduce no-shows with automatic reminders via SMS, email, and phone calls. For practices, salons, and service providers.",
     "headline": "Never Miss an Appointment Again",
-    "subheadline": "Automatic reminders via SMS and email — so your customers show up on time and you have less downtime.",
+    "subheadline": "Automatic reminders via email, SMS, and phone calls — so your customers show up on time and you have less downtime.",
     "cta": "Get Started",
     "features": {
       "title": "What SerahrRemind Does",
       "sms": {
-        "title": "SMS & Email",
-        "text": "Reminders via the channel your customers prefer."
+        "title": "Email, SMS & Phone Calls",
+        "text": "Reminders via the channel your customers prefer — including text-to-speech calls."
       },
       "timing": {
-        "title": "Flexible Timing",
-        "text": "24h before, 1h before — you decide when to remind."
+        "title": "Automated Sequences",
+        "text": "24h before, 1h before — you decide the timing and order."
       },
       "integration": {
-        "title": "Easy Setup",
-        "text": "Ready in minutes. No technical knowledge required."
+        "title": "Calendar Integration",
+        "text": "Seamless connection to your existing calendar. Ready in minutes."
       },
       "analytics": {
         "title": "Analytics",
@@ -97,28 +129,28 @@
     }
   },
   "chat_page": {
-    "meta_title": "SerahrChat — AI-Powered FAQ Chatbot",
-    "meta_description": "An intelligent chatbot that automatically answers your customers' most common questions. Easy to set up, available 24/7.",
-    "headline": "Your AI FAQ Assistant",
-    "subheadline": "Answer customer questions automatically — around the clock, without additional staff.",
+    "meta_title": "SerahrChat — AI Chatbot for Websites",
+    "meta_description": "An AI-powered chatbot that automatically answers customer questions. Multilingual, 5-minute integration, full data control.",
+    "headline": "AI Chatbot for Your Website",
+    "subheadline": "Answer customer questions automatically — around the clock, multilingual, and integrated in just 5 minutes.",
     "cta": "Get Started",
     "features": {
       "title": "What SerahrChat Does",
       "ai": {
-        "title": "AI-Powered",
+        "title": "AI-Powered Answers",
         "text": "Understands natural language and learns from your FAQ documents."
       },
       "setup": {
-        "title": "Quick Setup",
-        "text": "Upload FAQ document, embed widget — done."
-      },
-      "widget": {
-        "title": "Works Everywhere",
+        "title": "5-Minute Integration",
         "text": "One small script tag is all it takes — works on any website."
       },
+      "widget": {
+        "title": "Multilingual (DE/EN)",
+        "text": "Answers questions in German and English, automatically detected."
+      },
       "managed": {
-        "title": "Managed Service",
-        "text": "We take care of hosting, updates, and maintenance."
+        "title": "Full Data Control",
+        "text": "Managed service with hosting in Germany. You control what the bot knows."
       }
     },
     "audience": {
@@ -128,27 +160,27 @@
   },
   "count_page": {
     "meta_title": "SerahrCount — Real-Time Visitor Counting",
-    "meta_description": "Track visitor flows in real time. For events, venues, and public facilities.",
+    "meta_description": "Track visitor flows in real time. Multi-entrance, smartphone-ready, export and analytics.",
     "headline": "Real-Time Visitor Counting",
     "subheadline": "Always know how many visitors are on site — for better planning and more safety.",
     "cta": "Get Started",
     "features": {
       "title": "What SerahrCount Does",
       "realtime": {
-        "title": "Real-Time Data",
+        "title": "Real-Time Counting",
         "text": "Live counting with instant display on any device."
       },
       "simple": {
-        "title": "Easy to Use",
-        "text": "Count by click — no complicated setup needed."
+        "title": "Multi-Entrance",
+        "text": "Count multiple entrances simultaneously — all in sync."
       },
       "history": {
-        "title": "Historical Data",
-        "text": "Analyze visitor trends over days, weeks, and months."
+        "title": "Export & Analytics",
+        "text": "Analyze visitor trends and export your data."
       },
       "share": {
-        "title": "Shareable Display",
-        "text": "Public display URL for visitors or authorities."
+        "title": "Smartphone-Ready",
+        "text": "Count by tap on your phone. Public display URL for visitors or authorities."
       }
     },
     "audience": {
@@ -161,6 +193,7 @@
     "privacy_title": "Privacy Policy",
     "privacy_product_title": "Privacy Policy — {product}",
     "terms_title": "Terms and Conditions — {product}",
+    "docs_product_title": "Documentation — {product}",
     "back": "Back to homepage",
     "placeholder": "This page will be filled with legal content."
   }

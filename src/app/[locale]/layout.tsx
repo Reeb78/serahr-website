@@ -3,7 +3,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -14,6 +14,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
+  subsets: ["latin"],
+  weight: ["500", "600", "700", "800"],
 });
 
 export function generateStaticParams() {
@@ -52,7 +58,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${jakarta.variable} font-sans antialiased`}
       >
         <NextIntlClientProvider>
           {children}
