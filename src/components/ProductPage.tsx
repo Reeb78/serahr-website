@@ -9,18 +9,28 @@ type Feature = {
   icon: React.ReactNode;
 };
 
+type PricingTier = {
+  key: string;
+  isPopular?: boolean;
+  isLifetime?: boolean;
+};
+
 export default function ProductPage({
   namespace,
   appUrl,
   features,
   color,
   hasDocumentation,
+  pricingTiers,
+  hasFaq,
 }: {
   namespace: string;
   appUrl: string;
   features: Feature[];
   color: string;
   hasDocumentation?: boolean;
+  pricingTiers?: PricingTier[];
+  hasFaq?: boolean;
 }) {
   const t = useTranslations(`${namespace}_page`);
   const tCommon = useTranslations("common");
@@ -101,8 +111,76 @@ export default function ProductPage({
         </div>
       </section>
 
+      {/* Pricing */}
+      {pricingTiers && pricingTiers.length > 0 && (
+        <section className="border-y border-serahr-ice bg-serahr-ice/30 py-24">
+          <div className="mx-auto max-w-6xl px-6">
+            <ScrollReveal>
+              <div className="text-center">
+                <p className="text-sm font-bold uppercase tracking-[0.2em] text-serahr-bright">
+                  {t("pricing.label")}
+                </p>
+                <h2 className="mt-4 font-heading text-3xl font-extrabold tracking-tight text-serahr-deep sm:text-4xl">
+                  {t("pricing.title")}
+                </h2>
+                <p className="mx-auto mt-4 max-w-2xl text-lg text-muted">
+                  {t("pricing.subtitle")}
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <div className={`mt-16 grid gap-6 sm:grid-cols-2 ${pricingTiers.length >= 3 ? "lg:grid-cols-3" : ""}`}>
+              {pricingTiers.map((tier, i) => (
+                <ScrollReveal key={tier.key} delay={(i % 3) + 1}>
+                  <div className={`relative h-full rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 ${
+                    tier.isPopular
+                      ? "border-2 border-serahr-bright bg-white shadow-lg shadow-serahr-bright/10 hover:shadow-xl hover:shadow-serahr-bright/20"
+                      : "border border-serahr-ice bg-white shadow-sm hover:border-serahr-bright/50 hover:shadow-lg hover:shadow-serahr-bright/10"
+                  }`}>
+                    <h3 className="font-heading text-xl font-bold text-serahr-deep">
+                      {t(`pricing.${tier.key}.name`)}
+                    </h3>
+                    <p className="mt-3 font-heading text-2xl font-extrabold text-serahr-medium">
+                      {t(`pricing.${tier.key}.price`)}{" "}
+                      <span className="text-sm font-medium text-muted">
+                        {tier.isLifetime ? t("pricing.one_time") : t("pricing.month")}
+                      </span>
+                    </p>
+                    {!tier.isLifetime && (
+                      <p className="mt-1 text-xs text-muted">
+                        {t("pricing.yearly_note", { price: t(`pricing.${tier.key}.price_yearly`) })}
+                      </p>
+                    )}
+                    <ul className="mt-6 space-y-3 text-sm text-muted">
+                      {["f1", "f2", "f3", "f4"].map((fKey) => (
+                        <li key={fKey} className="flex items-start gap-2">
+                          <span className="mt-0.5 text-serahr-bright">&#10003;</span>
+                          {t(`pricing.${tier.key}.${fKey}`)}
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="mt-4 text-xs font-semibold text-serahr-deep">
+                      {t(`pricing.${tier.key}.highlight`)}
+                    </p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+
+            <ScrollReveal>
+              <p className="mt-8 text-center text-sm text-muted">
+                {t("pricing.vat_note")}
+              </p>
+              <p className="mt-2 text-center text-sm text-muted">
+                {t("pricing.purchase_note")}
+              </p>
+            </ScrollReveal>
+          </div>
+        </section>
+      )}
+
       {/* Audience */}
-      <section className="border-y border-serahr-ice bg-serahr-ice/30 py-16">
+      <section className={`${pricingTiers ? "" : "border-y border-serahr-ice bg-serahr-ice/30 "}py-16`}>
         <ScrollReveal>
           <div className="mx-auto max-w-4xl px-6 text-center">
             <h2 className="font-heading text-2xl font-extrabold text-serahr-deep">
@@ -123,6 +201,36 @@ export default function ProductPage({
           </div>
         </ScrollReveal>
       </section>
+
+      {/* FAQ */}
+      {hasFaq && (
+        <section className="bg-white py-24">
+          <div className="mx-auto max-w-4xl px-6">
+            <ScrollReveal>
+              <p className="text-center text-sm font-bold uppercase tracking-[0.2em] text-serahr-bright">
+                {t("faq.label")}
+              </p>
+              <h2 className="mt-4 text-center font-heading text-3xl font-extrabold tracking-tight text-serahr-deep sm:text-4xl">
+                {t("faq.title")}
+              </h2>
+            </ScrollReveal>
+            <div className="mt-12 grid gap-6 sm:grid-cols-2">
+              {[1, 2, 3, 4].map((n) => (
+                <ScrollReveal key={n} delay={(n % 2) + 1}>
+                  <div className="h-full rounded-2xl border border-serahr-ice bg-gradient-to-b from-white to-serahr-ice/30 p-6">
+                    <h3 className="font-semibold text-serahr-deep">
+                      {t(`faq.q${n}`)}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted">
+                      {t(`faq.a${n}`)}
+                    </p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Bottom CTA */}
       <section className="border-t border-serahr-ice bg-serahr-ice/30 py-20">

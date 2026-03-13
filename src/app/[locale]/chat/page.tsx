@@ -19,11 +19,17 @@ export default function ChatPage({ params }: { params: { locale: string } }) {
       appUrl="https://serahrchat.serahr.de"
       color="serahr-medium"
       hasDocumentation
+      hasFaq
       features={[
         { key: "ai", icon: <Bot className="h-6 w-6 text-serahr-medium" /> },
         { key: "setup", icon: <Zap className="h-6 w-6 text-serahr-medium" /> },
         { key: "widget", icon: <Globe className="h-6 w-6 text-serahr-medium" /> },
         { key: "managed", icon: <Shield className="h-6 w-6 text-serahr-medium" /> },
+      ]}
+      pricingTiers={[
+        { key: "basis" },
+        { key: "pro", isPopular: true },
+        { key: "lifetime", isLifetime: true },
       ]}
     />
   );

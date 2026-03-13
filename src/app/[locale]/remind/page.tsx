@@ -139,10 +139,10 @@ function RemindPageContent() {
               const isPopular = tier === "standard";
               return (
                 <ScrollReveal key={tier} delay={(i % 4) + 1}>
-                  <div className={`relative h-full rounded-2xl p-6 ${
+                  <div className={`relative h-full rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 ${
                     isPopular
-                      ? "border-2 border-serahr-bright bg-white shadow-lg shadow-serahr-bright/10"
-                      : "border border-serahr-ice bg-white shadow-sm"
+                      ? "border-2 border-serahr-bright bg-white shadow-lg shadow-serahr-bright/10 hover:shadow-xl hover:shadow-serahr-bright/20"
+                      : "border border-serahr-ice bg-white shadow-sm hover:border-serahr-bright/50 hover:shadow-lg hover:shadow-serahr-bright/10"
                   }`}>
                     <h3 className="font-heading text-xl font-bold text-serahr-deep">
                       {t(`pricing.${tier}.name`)}
@@ -217,6 +217,34 @@ function RemindPageContent() {
             </div>
           </div>
         </ScrollReveal>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-white py-24">
+        <div className="mx-auto max-w-4xl px-6">
+          <ScrollReveal>
+            <p className="text-center text-sm font-bold uppercase tracking-[0.2em] text-serahr-bright">
+              {t("faq.label")}
+            </p>
+            <h2 className="mt-4 text-center font-heading text-3xl font-extrabold tracking-tight text-serahr-deep sm:text-4xl">
+              {t("faq.title")}
+            </h2>
+          </ScrollReveal>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2">
+            {[1, 2, 3, 4].map((n) => (
+              <ScrollReveal key={n} delay={(n % 2) + 1}>
+                <div className="h-full rounded-2xl border border-serahr-ice bg-gradient-to-b from-white to-serahr-ice/30 p-6">
+                  <h3 className="font-semibold text-serahr-deep">
+                    {t(`faq.q${n}`)}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">
+                    {t(`faq.a${n}`)}
+                  </p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Demo CTA */}

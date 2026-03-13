@@ -192,6 +192,18 @@
       "title": "Perfect For",
       "items": "Medical practices, Dental offices, Physiotherapy, Hair salons, Beauty studios, Consulting firms"
     },
+    "faq": {
+      "label": "FAQ",
+      "title": "Frequently Asked Questions",
+      "q1": "How does the demo work?",
+      "a1": "The demo shows all features with test data. SMS and phone calls are disabled — only email reminders are sent. All data is reset every hour.",
+      "q2": "What reminder channels are available?",
+      "a2": "Email reminders are included in all plans. SMS and text-to-speech calls are available as additional channels.",
+      "q3": "Can I manage multiple locations?",
+      "a3": "Yes — the Pro plan supports up to 5 locations, Enterprise is unlimited. Each location has its own data and settings.",
+      "q4": "How is my data protected?",
+      "a4": "Encrypted transmission, German server location, and an audit log for traceability. We continuously strive for GDPR compliance."
+    },
     "demo": {
       "title": "Try It Free",
       "text": "Test SerahrRemind with the public demo. Use test data only — all data is reset every hour.",
@@ -225,9 +237,60 @@
         "text": "Managed service with hosting in Germany. You control what the bot knows."
       }
     },
+    "pricing": {
+      "label": "Pricing",
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Plans are purchased directly in the SerahrChat installation.",
+      "month": "/ month",
+      "yearly_note": "Yearly: {price}",
+      "one_time": "one-time",
+      "basis": {
+        "name": "Basis",
+        "price": "€29",
+        "price_yearly": "€290",
+        "f1": "1 Instance",
+        "f2": "Up to 10 documents",
+        "f3": "Email support",
+        "f4": "Basic analytics, DE/EN",
+        "highlight": "7-day free trial"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "€49",
+        "price_yearly": "€490",
+        "f1": "1 Instance",
+        "f2": "Up to 50 documents",
+        "f3": "White label & custom colors",
+        "f4": "Management API, priority support",
+        "highlight": "Custom instructions, topic clustering"
+      },
+      "lifetime": {
+        "name": "Lifetime",
+        "price": "€999",
+        "f1": "All Pro features included",
+        "f2": "Lifetime updates",
+        "f3": "No recurring costs",
+        "f4": "Perpetual license",
+        "highlight": "One-time payment — no subscription"
+      },
+      "vat_note": "All prices are net prices excluding applicable VAT.",
+      "purchase_note": "7-day free trial — no payment details required."
+    },
     "audience": {
       "title": "Perfect For",
       "items": "Small businesses, Service providers, Online shops, Practices, Associations"
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Frequently Asked Questions",
+      "q1": "How is SerahrChat integrated?",
+      "a1": "Just one script tag on your website. We handle setup, hosting, and operations as a managed service.",
+      "q2": "What languages are supported?",
+      "a2": "Currently German and English — the language is detected automatically.",
+      "q3": "Where is my data stored?",
+      "a3": "All data is hosted on German servers. You decide which documents the chatbot has access to.",
+      "q4": "How do I purchase a plan?",
+      "a4": "Plans are purchased directly in the SerahrChat installation via Stripe Checkout. You can start with a 7-day free trial — no payment details required."
     },
     "cta_bottom": {
       "title": "Ready for better customer service?",

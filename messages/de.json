@@ -192,6 +192,18 @@
       "title": "Perfekt für",
       "items": "Arztpraxen, Zahnarztpraxen, Physiotherapie, Friseursalons, Kosmetikstudios, Beratungsunternehmen"
     },
+    "faq": {
+      "label": "FAQ",
+      "title": "Häufige Fragen",
+      "q1": "Wie funktioniert die Demo?",
+      "a1": "Die Demo zeigt alle Funktionen mit Testdaten. SMS und Anrufe sind deaktiviert — nur E-Mail-Erinnerungen werden versendet. Alle Daten werden stündlich zurückgesetzt.",
+      "q2": "Welche Erinnerungskanäle gibt es?",
+      "a2": "E-Mail-Erinnerungen sind in allen Tarifen enthalten. SMS und Text-to-Speech Anrufe sind als zusätzliche Kanäle verfügbar.",
+      "q3": "Kann ich mehrere Standorte verwalten?",
+      "a3": "Ja — ab dem Pro-Tarif sind bis zu 5 Standorte möglich, im Enterprise-Tarif unbegrenzt. Jeder Standort hat eigene Daten und Einstellungen.",
+      "q4": "Wie werden meine Daten geschützt?",
+      "a4": "Verschlüsselte Übertragung, deutscher Serverstandort und ein Audit-Log für Nachvollziehbarkeit. Wir streben durchgehend DSGVO-Konformität an."
+    },
     "demo": {
       "title": "Jetzt kostenlos testen",
       "text": "Testen Sie SerahrRemind mit der öffentlichen Demo. Nur Testdaten verwenden — alle Daten werden stündlich zurückgesetzt.",
@@ -225,9 +237,60 @@
         "text": "Managed Service mit Hosting in Deutschland. Sie bestimmen, was der Bot weiß."
       }
     },
+    "pricing": {
+      "label": "Preise",
+      "title": "Einfache, transparente Preise",
+      "subtitle": "Pläne werden direkt in der SerahrChat-Installation erworben.",
+      "month": "/ Monat",
+      "yearly_note": "Jährlich: {price}",
+      "one_time": "einmalig",
+      "basis": {
+        "name": "Basis",
+        "price": "29 €",
+        "price_yearly": "290 €",
+        "f1": "1 Instanz",
+        "f2": "Bis zu 10 Dokumente",
+        "f3": "E-Mail-Support",
+        "f4": "Basis-Analysen, DE/EN",
+        "highlight": "7 Tage kostenlos testen"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "49 €",
+        "price_yearly": "490 €",
+        "f1": "1 Instanz",
+        "f2": "Bis zu 50 Dokumente",
+        "f3": "White Label & eigene Farben",
+        "f4": "Management API, Priority Support",
+        "highlight": "Custom Instructions, Topic Clustering"
+      },
+      "lifetime": {
+        "name": "Lifetime",
+        "price": "999 €",
+        "f1": "Alle Pro-Features inklusive",
+        "f2": "Lifetime-Updates",
+        "f3": "Keine laufenden Kosten",
+        "f4": "Unbegrenzte Laufzeit",
+        "highlight": "Einmalzahlung — kein Abo"
+      },
+      "vat_note": "Alle Preise verstehen sich netto zzgl. der gesetzlichen Mehrwertsteuer.",
+      "purchase_note": "7 Tage kostenlos testen — keine Zahlungsdaten nötig."
+    },
     "audience": {
       "title": "Perfekt für",
       "items": "Kleine Unternehmen, Dienstleister, Online-Shops, Praxen, Vereine"
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Häufige Fragen",
+      "q1": "Wie wird SerahrChat integriert?",
+      "a1": "Ein Script-Tag auf Ihrer Website genügt. Wir übernehmen Setup, Hosting und Betrieb als Managed Service.",
+      "q2": "Welche Sprachen werden unterstützt?",
+      "a2": "Aktuell Deutsch und Englisch — die Sprache wird automatisch erkannt.",
+      "q3": "Wo werden meine Daten gespeichert?",
+      "a3": "Alle Daten werden auf deutschen Servern gehostet. Sie bestimmen, welche Dokumente der Chatbot kennt.",
+      "q4": "Wie erwerbe ich einen Plan?",
+      "a4": "Pläne werden direkt in der SerahrChat-Installation über Stripe Checkout erworben. Sie können mit einer 7-tägigen Testphase starten — ohne Zahlungsdaten."
     },
     "cta_bottom": {
       "title": "Bereit für besseren Kundenservice?",
