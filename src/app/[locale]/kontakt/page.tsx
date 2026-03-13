@@ -35,6 +35,14 @@ export default function KontaktPage() {
         </div>
       </section>
 
+      {/* Wave divider */}
+      <div className="relative -mt-1 bg-white">
+        <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full" preserveAspectRatio="none">
+          <path d="M0 60V20C240 45 480 55 720 45C960 35 1200 15 1440 25V60H0Z" fill="white" />
+          <path d="M0 20C240 45 480 55 720 45C960 35 1200 15 1440 25" stroke="#EAF4FB" strokeWidth="1.5" fill="none" />
+        </svg>
+      </div>
+
       {/* Form */}
       <section className="bg-white px-6 py-16">
         <div className="mx-auto max-w-xl">
@@ -114,7 +122,7 @@ export default function KontaktPage() {
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="inline-flex h-12 w-full items-center justify-center rounded-full bg-serahr-deep px-8 text-sm font-semibold text-white shadow-lg shadow-serahr-deep/20 transition-all hover:bg-serahr-medium hover:shadow-serahr-medium/30 hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0"
+                className="inline-flex h-14 w-full items-center justify-center rounded-full bg-serahr-deep px-8 text-sm font-semibold text-white shadow-xl shadow-serahr-deep/25 transition-all hover:bg-serahr-medium hover:shadow-serahr-medium/30 hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0"
               >
                 {status === "sending" ? "..." : t("submit")}
               </button>

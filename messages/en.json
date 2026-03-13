@@ -31,7 +31,7 @@
     "chat": {
       "name": "SerahrChat",
       "tagline": "AI Chatbot for Websites",
-      "description": "AI-powered answers, multilingual (DE/EN), 5-minute integration on any website. Full data control as a managed service.",
+      "description": "AI-powered answers, multilingual (DE/EN), quick integration on any website. Full data control as a managed service.",
       "link": "Learn more"
     },
     "count": {
@@ -189,9 +189,9 @@
   },
   "chat_page": {
     "meta_title": "SerahrChat — AI Chatbot for Websites",
-    "meta_description": "An AI-powered chatbot that automatically answers customer questions. Multilingual, 5-minute integration, full data control.",
+    "meta_description": "An AI-powered chatbot that automatically answers customer questions. Multilingual, quick integration, full data control.",
     "headline": "AI Chatbot for Your Website",
-    "subheadline": "Answer customer questions automatically — around the clock, multilingual, and integrated in just 5 minutes.",
+    "subheadline": "Answer customer questions automatically — around the clock, multilingual, and integrated in just a few minutes.",
     "cta": "Get Started",
     "features": {
       "label": "Features",
@@ -201,7 +201,7 @@
         "text": "Understands natural language and learns from your FAQ documents."
       },
       "setup": {
-        "title": "5-Minute Integration",
+        "title": "Quick Integration",
         "text": "One small script tag is all it takes — works on any website."
       },
       "widget": {
@@ -216,6 +216,12 @@
     "audience": {
       "title": "Perfect For",
       "items": "Small businesses, Service providers, Online shops, Practices, Associations"
+    },
+    "cta_bottom": {
+      "title": "Ready for better customer service?",
+      "text": "Integrate SerahrChat on your website in just a few minutes. We handle setup and operations.",
+      "button": "Get Started",
+      "note": "Managed service — you focus on your business, we take care of the chatbot."
     }
   },
   "count_page": {

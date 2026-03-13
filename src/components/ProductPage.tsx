@@ -123,6 +123,32 @@ export default function ProductPage({
         </ScrollReveal>
       </section>
 
+      {/* Bottom CTA */}
+      <section className="border-t border-serahr-ice bg-serahr-ice/30 py-20">
+        <ScrollReveal>
+          <div className="mx-auto max-w-2xl px-6 text-center">
+            <h2 className="font-heading text-3xl font-extrabold tracking-tight text-serahr-deep">
+              {t("cta_bottom.title")}
+            </h2>
+            <p className="mx-auto mt-4 max-w-lg text-muted">
+              {t("cta_bottom.text")}
+            </p>
+            <div className="mt-8">
+              <a
+                href={appUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-14 items-center gap-2 rounded-full bg-serahr-deep px-10 text-sm font-semibold text-white shadow-xl shadow-serahr-deep/25 transition-all hover:bg-serahr-medium hover:shadow-serahr-medium/30 hover:-translate-y-0.5"
+              >
+                {t("cta_bottom.button")}
+                <ExternalLink className="h-4 w-4" />
+              </a>
+            </div>
+            <p className="mt-4 text-sm text-muted">{t("cta_bottom.note")}</p>
+          </div>
+        </ScrollReveal>
+      </section>
+
       {/* Legal links */}
       <section className="py-12">
         <div className="mx-auto flex max-w-4xl flex-wrap justify-center gap-6 px-6 text-sm text-muted">

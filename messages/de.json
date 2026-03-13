@@ -31,7 +31,7 @@
     "chat": {
       "name": "SerahrChat",
       "tagline": "KI-Chatbot für Websites",
-      "description": "KI-gestützte Antworten, mehrsprachig (DE/EN), 5-Minuten-Integration auf jeder Website. Volle Datenkontrolle als Managed Service.",
+      "description": "KI-gestützte Antworten, mehrsprachig (DE/EN), schnelle Integration auf jeder Website. Volle Datenkontrolle als Managed Service.",
       "link": "Mehr erfahren"
     },
     "count": {
@@ -189,9 +189,9 @@
   },
   "chat_page": {
     "meta_title": "SerahrChat — KI-Chatbot für Websites",
-    "meta_description": "Ein KI-gestützter Chatbot, der Kundenfragen automatisch beantwortet. Mehrsprachig, 5-Minuten-Integration, volle Datenkontrolle.",
+    "meta_description": "Ein KI-gestützter Chatbot, der Kundenfragen automatisch beantwortet. Mehrsprachig, schnelle Integration, volle Datenkontrolle.",
     "headline": "KI-Chatbot für Ihre Website",
-    "subheadline": "Beantworten Sie Kundenfragen automatisch — rund um die Uhr, mehrsprachig und in nur 5 Minuten integriert.",
+    "subheadline": "Beantworten Sie Kundenfragen automatisch — rund um die Uhr, mehrsprachig und in wenigen Minuten integriert.",
     "cta": "Jetzt starten",
     "features": {
       "label": "Features",
@@ -201,7 +201,7 @@
         "text": "Versteht natürliche Sprache und lernt aus Ihren FAQ-Dokumenten."
       },
       "setup": {
-        "title": "5-Minuten-Integration",
+        "title": "Schnelle Integration",
         "text": "Ein kleines Script-Tag genügt — funktioniert auf jeder Website."
       },
       "widget": {
@@ -216,6 +216,12 @@
     "audience": {
       "title": "Perfekt für",
       "items": "Kleine Unternehmen, Dienstleister, Online-Shops, Praxen, Vereine"
+    },
+    "cta_bottom": {
+      "title": "Bereit für besseren Kundenservice?",
+      "text": "Integrieren Sie SerahrChat in wenigen Minuten auf Ihrer Website. Wir übernehmen Setup und Betrieb.",
+      "button": "Jetzt starten",
+      "note": "Managed Service — Sie kümmern sich um Ihr Business, wir um den Chatbot."
     }
   },
   "count_page": {
