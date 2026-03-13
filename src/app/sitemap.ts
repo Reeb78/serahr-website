@@ -11,7 +11,6 @@ const pages = [
   { path: "/datenschutz", priority: 0.2, changeFrequency: "yearly" as const },
   { path: "/datenschutz/remind", priority: 0.2, changeFrequency: "yearly" as const },
   { path: "/datenschutz/chat", priority: 0.2, changeFrequency: "yearly" as const },
-  { path: "/agb/remind", priority: 0.2, changeFrequency: "yearly" as const },
   { path: "/agb/chat", priority: 0.2, changeFrequency: "yearly" as const },
   { path: "/dokumentation/chat", priority: 0.5, changeFrequency: "monthly" as const },
 ];

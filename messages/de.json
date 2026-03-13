@@ -185,6 +185,7 @@
         "sms": "Unbegrenzt",
         "highlight": "Account Manager, SLA, individuelle Anpassungen"
       },
+      "vat_note": "Alle Preise verstehen sich netto zzgl. der gesetzlichen Mehrwertsteuer.",
       "demo_note": "Die Demo zeigt alle Funktionen und Konfigurationsmöglichkeiten. SMS- und Anruf-Versand sind in der Demo nicht aktiv — nur E-Mail-Erinnerungen werden versendet."
     },
     "audience": {

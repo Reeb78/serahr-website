@@ -185,6 +185,7 @@
         "sms": "Unlimited",
         "highlight": "Account manager, SLA, custom features"
       },
+      "vat_note": "All prices are net prices excluding applicable VAT.",
       "demo_note": "The demo shows all features and configuration options. SMS and phone calls are not active in the demo — only email reminders are sent."
     },
     "audience": {

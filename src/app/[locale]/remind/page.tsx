@@ -187,6 +187,9 @@ function RemindPageContent() {
 
           <ScrollReveal>
             <p className="mt-8 text-center text-sm text-muted">
+              {t("pricing.vat_note")}
+            </p>
+            <p className="mt-2 text-center text-sm text-muted">
               {t("pricing.demo_note")}
             </p>
           </ScrollReveal>
@@ -245,9 +248,6 @@ function RemindPageContent() {
       {/* Legal links */}
       <section className="py-12">
         <div className="mx-auto flex max-w-4xl flex-wrap justify-center gap-6 px-6 text-sm text-muted">
-          <Link href="/agb/remind" className="hover:text-serahr-deep">
-            {tFooter("terms")}
-          </Link>
           <Link href="/datenschutz/remind" className="hover:text-serahr-deep">
             {tFooter("privacy")}
           </Link>
