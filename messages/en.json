@@ -104,7 +104,8 @@
     "consent_link": "More info in the Privacy Policy",
     "submit": "Send Message",
     "success": "Thank you! We'll get back to you within 24 hours.",
-    "error": "Something went wrong. Please try again."
+    "error": "Something went wrong. Please try again.",
+    "retry": "Try again"
   },
   "remind_page": {
     "meta_title": "SerahrRemind — Automatic Appointment Reminders",
@@ -334,7 +335,9 @@
   },
   "legal": {
     "imprint_title": "Imprint",
+    "imprint_description": "Legal notice and contact details for Serahr — Thorsten Ahrens, Cologne, Germany.",
     "privacy_title": "Privacy Policy",
+    "privacy_description": "Privacy policy of Serahr — information on data collection, your rights, and the legal basis for processing.",
     "privacy_product_title": "Privacy Policy — {product}",
     "terms_title": "Terms and Conditions — {product}",
     "docs_product_title": "Documentation — {product}",

@@ -53,7 +53,7 @@ export async function generateMetadata({
       description: t("description"),
       images: [
         {
-          url: "/og-image.png",
+          url: "/og-image.jpg",
           width: 1200,
           height: 630,
           alt: "Serahr — Prototyping für Softwarelösungen",
@@ -62,7 +62,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      images: ["/og-image.png"],
+      images: ["/og-image.jpg"],
     },
     alternates: {
       languages: {

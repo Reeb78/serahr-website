@@ -104,7 +104,8 @@
     "consent_link": "Mehr Infos in der Datenschutzerklärung",
     "submit": "Nachricht senden",
     "success": "Vielen Dank! Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
-    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "retry": "Erneut versuchen"
   },
   "remind_page": {
     "meta_title": "SerahrRemind — Automatische Terminerinnerungen",
@@ -334,7 +335,9 @@
   },
   "legal": {
     "imprint_title": "Impressum",
+    "imprint_description": "Impressum und Kontaktdaten von Serahr — Thorsten Ahrens, Köln.",
     "privacy_title": "Datenschutzerklärung",
+    "privacy_description": "Datenschutzerklärung von Serahr — Informationen zur Datenerhebung, Ihren Rechten und den Rechtsgrundlagen.",
     "privacy_product_title": "Datenschutzerklärung — {product}",
     "terms_title": "Allgemeine Geschäftsbedingungen — {product}",
     "docs_product_title": "Dokumentation — {product}",

@@ -15,6 +15,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "legal" });
   return {
     title: t("privacy_title"),
+    description: t("privacy_description"),
     alternates: getAlternates("/datenschutz"),
   };
 }

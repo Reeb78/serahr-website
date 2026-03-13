@@ -13,9 +13,26 @@ export default function KontaktPage() {
     e.preventDefault();
     setStatus("sending");
 
-    // TODO: Connect to Supabase when DB is set up
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setStatus("success");
+    const form = e.currentTarget;
+    const data = {
+      firstName: (form.elements.namedItem("firstName") as HTMLInputElement).value,
+      lastName: (form.elements.namedItem("lastName") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      topic: (form.elements.namedItem("topic") as HTMLSelectElement).value,
+      subject: (form.elements.namedItem("subject") as HTMLInputElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      setStatus(res.ok ? "success" : "error");
+    } catch {
+      setStatus("error");
+    }
   }
 
   const inputClass =
@@ -52,6 +69,19 @@ export default function KontaktPage() {
                 ✓
               </div>
               <p className="mt-4 text-lg font-medium text-green-800">{t("success")}</p>
+            </div>
+          ) : status === "error" ? (
+            <div className="rounded-2xl border border-red-200 bg-red-50 p-10 text-center">
+              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-red-100 text-2xl">
+                ✕
+              </div>
+              <p className="mt-4 text-lg font-medium text-red-800">{t("error")}</p>
+              <button
+                onClick={() => setStatus("idle")}
+                className="mt-4 text-sm font-medium text-serahr-medium hover:text-serahr-deep"
+              >
+                {t("retry")}
+              </button>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">

@@ -14,6 +14,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "legal" });
   return {
     title: t("imprint_title"),
+    description: t("imprint_description"),
     alternates: getAlternates("/impressum"),
   };
 }

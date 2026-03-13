@@ -4,7 +4,7 @@ export const SITE_URL = "https://serahr.de";
 
 export function getAlternates(path: string) {
   return {
-    canonical: path,
+    canonical: `${SITE_URL}${path}`,
     languages: Object.fromEntries(
       routing.locales.map((locale) => [locale, `/${locale}${path}`])
     ),
