@@ -80,6 +80,7 @@
     "privacy": "Privacy Policy",
     "terms": "Terms",
     "legal_heading": "Legal",
+    "documentation": "Documentation",
     "contact": "Contact",
     "copyright": "© {year} Thorsten Ahrens. All rights reserved."
   },
@@ -142,9 +143,14 @@
     "pricing": {
       "label": "Pricing",
       "title": "Simple, Transparent Pricing",
-      "subtitle": "Final pricing will be published after the beta phase. Try the demo for free right now.",
+      "subtitle": "Preliminary pricing — subject to change before official launch.",
+      "month": "/ month",
+      "yearly_note": "Yearly: {price}",
+      "custom_price": "Custom",
       "basis": {
         "name": "Basis",
+        "price": "€29",
+        "price_yearly": "€290",
         "users": "2 Users",
         "clients": "50 Clients",
         "locations": "1 Location, 5 Rooms",
@@ -153,6 +159,8 @@
       },
       "standard": {
         "name": "Standard",
+        "price": "€59",
+        "price_yearly": "€590",
         "users": "5 Users",
         "clients": "100 Clients",
         "locations": "1 Location, 10 Rooms",
@@ -161,6 +169,8 @@
       },
       "pro": {
         "name": "Pro",
+        "price": "€149",
+        "price_yearly": "€1,490",
         "users": "50 Users",
         "clients": "Unlimited Clients",
         "locations": "5 Locations",
@@ -175,7 +185,6 @@
         "sms": "Unlimited",
         "highlight": "Account manager, SLA, custom features"
       },
-      "coming_soon": "Pricing coming soon",
       "demo_note": "The demo shows all features and configuration options. SMS and phone calls are not active in the demo — only email reminders are sent."
     },
     "audience": {

@@ -103,11 +103,6 @@ export default function DatenschutzPage({ params }: { params: { locale: string }
             Datenschutzerklärung — SerahrChat →
           </Link>
         </li>
-        <li>
-          <Link href="/datenschutz/count">
-            Datenschutzerklärung — SerahrCount →
-          </Link>
-        </li>
       </ul>
     </LegalPage>
   );

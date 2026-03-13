@@ -24,6 +24,7 @@ export default function ProductPage({
 }) {
   const t = useTranslations(`${namespace}_page`);
   const tCommon = useTranslations("common");
+  const tFooter = useTranslations("footer");
   const slug = namespace.replace("_page", "");
 
   return (
@@ -153,14 +154,14 @@ export default function ProductPage({
       <section className="py-12">
         <div className="mx-auto flex max-w-4xl flex-wrap justify-center gap-6 px-6 text-sm text-muted">
           <Link href={`/agb/${slug}`} className="hover:text-serahr-deep">
-            AGB
+            {tFooter("terms")}
           </Link>
           <Link href={`/datenschutz/${slug}`} className="hover:text-serahr-deep">
-            Datenschutz
+            {tFooter("privacy")}
           </Link>
           {hasDocumentation && (
             <Link href={`/dokumentation/${slug}`} className="hover:text-serahr-deep">
-              Dokumentation
+              {tFooter("documentation")}
             </Link>
           )}
         </div>

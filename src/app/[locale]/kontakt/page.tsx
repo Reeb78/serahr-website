@@ -124,7 +124,15 @@ export default function KontaktPage() {
                 disabled={status === "sending"}
                 className="inline-flex h-14 w-full items-center justify-center rounded-full bg-serahr-deep px-8 text-sm font-semibold text-white shadow-xl shadow-serahr-deep/25 transition-all hover:bg-serahr-medium hover:shadow-serahr-medium/30 hover:-translate-y-0.5 disabled:opacity-50 disabled:hover:translate-y-0"
               >
-                {status === "sending" ? "..." : t("submit")}
+                {status === "sending" ? (
+                  <span className="inline-flex items-center gap-2">
+                    <svg className="h-4 w-4 animate-spin" viewBox="0 0 24 24" fill="none">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                    </svg>
+                    {t("submit")}
+                  </span>
+                ) : t("submit")}
               </button>
             </form>
           )}

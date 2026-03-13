@@ -51,9 +51,18 @@ export async function generateMetadata({
       siteName: "Serahr",
       title: t("title"),
       description: t("description"),
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Serahr — Prototyping für Softwarelösungen",
+        },
+      ],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
+      images: ["/og-image.png"],
     },
     alternates: {
       languages: {

@@ -30,6 +30,7 @@ export default function RemindPage({ params }: { params: { locale: string } }) {
 
 function RemindPageContent() {
   const t = useTranslations("remind_page");
+  const tFooter = useTranslations("footer");
 
   const features = [
     { key: "reminders", icon: <BellRing className="h-6 w-6 text-serahr-medium" /> },
@@ -147,8 +148,16 @@ function RemindPageContent() {
                       {t(`pricing.${tier}.name`)}
                     </h3>
                     <p className="mt-3 font-heading text-2xl font-extrabold text-serahr-medium">
-                      {t("pricing.coming_soon")}
+                      {tier === "enterprise"
+                        ? t("pricing.custom_price")
+                        : <>{t(`pricing.${tier}.price`)} <span className="text-sm font-medium text-muted">{t("pricing.month")}</span></>
+                      }
                     </p>
+                    {tier !== "enterprise" && (
+                      <p className="mt-1 text-xs text-muted">
+                        {t("pricing.yearly_note", { price: t(`pricing.${tier}.price_yearly`) })}
+                      </p>
+                    )}
                     <ul className="mt-6 space-y-3 text-sm text-muted">
                       <li className="flex items-start gap-2">
                         <span className="mt-0.5 text-serahr-bright">&#10003;</span>
@@ -236,8 +245,11 @@ function RemindPageContent() {
       {/* Legal links */}
       <section className="py-12">
         <div className="mx-auto flex max-w-4xl flex-wrap justify-center gap-6 px-6 text-sm text-muted">
+          <Link href="/agb/remind" className="hover:text-serahr-deep">
+            {tFooter("terms")}
+          </Link>
           <Link href="/datenschutz/remind" className="hover:text-serahr-deep">
-            Datenschutz
+            {tFooter("privacy")}
           </Link>
         </div>
       </section>

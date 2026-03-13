@@ -80,6 +80,7 @@
     "privacy": "Datenschutz",
     "terms": "AGB",
     "legal_heading": "Rechtliches",
+    "documentation": "Dokumentation",
     "contact": "Kontakt",
     "copyright": "© {year} Thorsten Ahrens. Alle Rechte vorbehalten."
   },
@@ -142,9 +143,14 @@
     "pricing": {
       "label": "Preise",
       "title": "Einfache, transparente Preise",
-      "subtitle": "Finale Preise werden nach der Beta-Phase veröffentlicht. Testen Sie die Demo schon jetzt kostenlos.",
+      "subtitle": "Vorläufige Preise — Änderungen vor dem offiziellen Launch vorbehalten.",
+      "month": "/ Monat",
+      "yearly_note": "Jährlich: {price}",
+      "custom_price": "Individuell",
       "basis": {
         "name": "Basis",
+        "price": "29 €",
+        "price_yearly": "290 €",
         "users": "2 Benutzer",
         "clients": "50 Kunden",
         "locations": "1 Standort, 5 Räume",
@@ -153,6 +159,8 @@
       },
       "standard": {
         "name": "Standard",
+        "price": "59 €",
+        "price_yearly": "590 €",
         "users": "5 Benutzer",
         "clients": "100 Kunden",
         "locations": "1 Standort, 10 Räume",
@@ -161,6 +169,8 @@
       },
       "pro": {
         "name": "Pro",
+        "price": "149 €",
+        "price_yearly": "1.490 €",
         "users": "50 Benutzer",
         "clients": "Unbegrenzt Kunden",
         "locations": "5 Standorte",
@@ -175,7 +185,6 @@
         "sms": "Unbegrenzt",
         "highlight": "Account Manager, SLA, individuelle Anpassungen"
       },
-      "coming_soon": "Preise folgen",
       "demo_note": "Die Demo zeigt alle Funktionen und Konfigurationsmöglichkeiten. SMS- und Anruf-Versand sind in der Demo nicht aktiv — nur E-Mail-Erinnerungen werden versendet."
     },
     "audience": {
