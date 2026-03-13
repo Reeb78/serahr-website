@@ -19,7 +19,7 @@ export default function KontaktPage() {
   }
 
   const inputClass =
-    "mt-2 block w-full rounded-xl border border-serahr-ice bg-white px-4 py-3 text-sm text-foreground shadow-sm outline-none transition-all focus:border-serahr-bright focus:ring-2 focus:ring-serahr-bright/20";
+    "mt-2 block w-full rounded-xl border border-serahr-ice bg-white px-4 py-3 text-sm text-foreground shadow-sm outline-none transition-all hover:border-serahr-bright/50 focus:border-serahr-bright focus:ring-2 focus:ring-serahr-bright/20";
 
   return (
     <PageLayout>
