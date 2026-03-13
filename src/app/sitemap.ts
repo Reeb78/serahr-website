@@ -6,16 +6,13 @@ const pages = [
   { path: "", priority: 1.0, changeFrequency: "weekly" as const },
   { path: "/remind", priority: 0.9, changeFrequency: "weekly" as const },
   { path: "/chat", priority: 0.9, changeFrequency: "weekly" as const },
-  { path: "/count", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/kontakt", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/impressum", priority: 0.2, changeFrequency: "yearly" as const },
   { path: "/datenschutz", priority: 0.2, changeFrequency: "yearly" as const },
   { path: "/datenschutz/remind", priority: 0.2, changeFrequency: "yearly" as const },
   { path: "/datenschutz/chat", priority: 0.2, changeFrequency: "yearly" as const },
-  { path: "/datenschutz/count", priority: 0.2, changeFrequency: "yearly" as const },
   { path: "/agb/remind", priority: 0.2, changeFrequency: "yearly" as const },
   { path: "/agb/chat", priority: 0.2, changeFrequency: "yearly" as const },
-  { path: "/agb/count", priority: 0.2, changeFrequency: "yearly" as const },
   { path: "/dokumentation/chat", priority: 0.5, changeFrequency: "monthly" as const },
 ];
 
