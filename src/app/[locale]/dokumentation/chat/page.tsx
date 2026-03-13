@@ -1,7 +1,15 @@
-import { setRequestLocale } from "next-intl/server";
+import type { Metadata } from "next";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import LegalPage from "@/components/LegalPage";
 import EnglishDisclaimer from "@/components/EnglishDisclaimer";
+import { getAlternates } from "@/lib/seo";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "legal" });
+  return { title: t("docs_product_title", { product: "SerahrChat" }), alternates: getAlternates("/dokumentation/chat") };
+}
 
 export default function DokumentationChatPage({ params }: { params: { locale: string } }) {
   setRequestLocale(params.locale);

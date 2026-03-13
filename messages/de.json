@@ -84,6 +84,8 @@
     "copyright": "© {year} Thorsten Ahrens. Alle Rechte vorbehalten."
   },
   "contact": {
+    "meta_title": "Kontakt",
+    "meta_description": "Haben Sie Fragen oder möchten Sie ein Projekt besprechen? Schreiben Sie uns — wir melden uns zeitnah.",
     "title": "Kontakt",
     "subtitle": "Haben Sie Fragen oder möchten Sie ein Projekt besprechen? Schreiben Sie uns — wir melden uns innerhalb von 24 Stunden.",
     "firstName": "Vorname",

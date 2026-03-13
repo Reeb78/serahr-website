@@ -84,6 +84,8 @@
     "copyright": "© {year} Thorsten Ahrens. All rights reserved."
   },
   "contact": {
+    "meta_title": "Contact",
+    "meta_description": "Have questions or want to discuss a project? Write to us — we'll get back to you promptly.",
     "title": "Contact",
     "subtitle": "Have questions or want to discuss a project? Write to us — we'll respond within 24 hours.",
     "firstName": "First Name",

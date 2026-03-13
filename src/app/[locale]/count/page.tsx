@@ -2,11 +2,12 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { Activity, DoorOpen, Download, Share2 } from "lucide-react";
 import ProductPage from "@/components/ProductPage";
+import { getAlternates } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "count_page" });
-  return { title: t("meta_title"), description: t("meta_description") };
+  return { title: t("meta_title"), description: t("meta_description"), alternates: getAlternates("/count") };
 }
 
 export default function CountPage({ params }: { params: { locale: string } }) {
