@@ -293,7 +293,7 @@
       "q3": "Where is my data stored?",
       "a3": "All data stays on your own server. You decide which documents the chatbot has access to.",
       "q4": "How do I purchase a plan?",
-      "a4": "Plans are purchased directly in the SerahrChat installation via Stripe Checkout.\nYou can start with a 7-day free trial — no payment details required."
+      "a4": "Start with a 7-day free trial — no payment details required. Plans are then purchased directly in the installation via Stripe Checkout."
     },
     "cta_bottom": {
       "title": "Ready for better customer service?",

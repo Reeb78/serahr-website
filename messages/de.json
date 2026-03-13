@@ -293,7 +293,7 @@
       "q3": "Wo werden meine Daten gespeichert?",
       "a3": "Alle Daten liegen auf Ihrem eigenen Server. Sie bestimmen, welche Dokumente der Chatbot kennt.",
       "q4": "Wie erwerbe ich einen Plan?",
-      "a4": "Pläne werden direkt in der SerahrChat-Installation über Stripe Checkout erworben.\nSie können mit einer 7-tägigen Testphase starten — ohne Zahlungsdaten."
+      "a4": "Starten Sie mit einer 7-tägigen Testphase — ohne Zahlungsdaten. Die Pläne erwerben Sie danach direkt in der Installation über Stripe Checkout."
     },
     "cta_bottom": {
       "title": "Bereit für besseren Kundenservice?",
