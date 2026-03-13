@@ -30,6 +30,7 @@ export default function RemindPage({ params }: { params: { locale: string } }) {
 
 function RemindPageContent() {
   const t = useTranslations("remind_page");
+  const tCommon = useTranslations("common");
   const tFooter = useTranslations("footer");
 
   const features = [
@@ -144,6 +145,11 @@ function RemindPageContent() {
                       ? "border-2 border-serahr-bright bg-white shadow-lg shadow-serahr-bright/10 hover:shadow-xl hover:shadow-serahr-bright/20"
                       : "border border-serahr-ice bg-white shadow-sm hover:border-serahr-bright/50 hover:shadow-lg hover:shadow-serahr-bright/10"
                   }`}>
+                    {isPopular && (
+                      <span className="absolute -top-3 right-4 rounded-full bg-serahr-bright px-3 py-0.5 text-xs font-semibold text-white shadow-sm">
+                        {tCommon("recommended")}
+                      </span>
+                    )}
                     <h3 className="font-heading text-xl font-bold text-serahr-deep">
                       {t(`pricing.${tier}.name`)}
                     </h3>

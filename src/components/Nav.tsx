@@ -101,11 +101,12 @@ export default function Nav() {
 
 function LocaleSwitcher() {
   const locale = useLocale();
+  const currentPath = usePathname();
 
   return (
     <div className="flex gap-0.5 rounded-full border border-serahr-bright/20 bg-serahr-ice/50 p-0.5 text-xs">
       <Link
-        href="/"
+        href={currentPath}
         locale="de"
         className={`rounded-full px-2.5 py-1 font-medium transition-colors ${
           locale === "de"
@@ -116,7 +117,7 @@ function LocaleSwitcher() {
         DE
       </Link>
       <Link
-        href="/"
+        href={currentPath}
         locale="en"
         className={`rounded-full px-2.5 py-1 font-medium transition-colors ${
           locale === "en"

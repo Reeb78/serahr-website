@@ -1,6 +1,7 @@
 {
   "common": {
-    "contact_cta": "Kontakt aufnehmen"
+    "contact_cta": "Kontakt aufnehmen",
+    "recommended": "Empfohlen"
   },
   "meta": {
     "title": "Serahr — Individuelle Softwareentwicklung",
@@ -31,7 +32,7 @@
     "chat": {
       "name": "SerahrChat",
       "tagline": "KI-Chatbot für Websites",
-      "description": "KI-gestützte Antworten, mehrsprachig (DE/EN), schnelle Integration auf jeder Website. Volle Datenkontrolle als Managed Service.",
+      "description": "KI-gestützte Antworten, mehrsprachig (DE/EN), schnelle Integration auf jeder Website. Self-Hosted auf Ihrem eigenen Server — volle Datenkontrolle.",
       "link": "Mehr erfahren"
     },
     "count": {
@@ -132,7 +133,7 @@
         "text": "Perfekt für Unternehmensgruppen und Filialnetze. Jeder Standort hat eigene Daten und Einstellungen."
       },
       "privacy": {
-        "title": "DSGVO-konform",
+        "title": "Datenschutz",
         "text": "Verschlüsselte Übertragung, deutscher Serverstandort und Audit-Log für Nachvollziehbarkeit."
       },
       "sequences": {
@@ -229,12 +230,12 @@
         "text": "Ein kleines Script-Tag genügt — funktioniert auf jeder Website."
       },
       "widget": {
-        "title": "Mehrsprachig (DE/EN)",
-        "text": "Beantwortet Fragen auf Deutsch und Englisch, automatisch erkannt."
+        "title": "Mehrsprachig",
+        "text": "Antwortet in der Sprache, in der er angesprochen wird. Optimiert für Deutsch und Englisch."
       },
       "managed": {
         "title": "Volle Datenkontrolle",
-        "text": "Managed Service mit Hosting in Deutschland. Sie bestimmen, was der Bot weiß."
+        "text": "Self-Hosted auf Ihrem eigenen Server. Automatische Security- und Image-Updates inklusive."
       }
     },
     "pricing": {
@@ -286,19 +287,19 @@
       "label": "FAQ",
       "title": "Häufige Fragen",
       "q1": "Wie wird SerahrChat integriert?",
-      "a1": "Ein Script-Tag auf Ihrer Website genügt. Wir übernehmen Setup, Hosting und Betrieb als Managed Service.",
+      "a1": "Ein Setup-Script installiert SerahrChat auf Ihrem Server. Das Widget wird per Script-Tag auf Ihrer Website eingebunden.",
       "q2": "Welche Sprachen werden unterstützt?",
       "a2": "Aktuell Deutsch und Englisch — die Sprache wird automatisch erkannt.",
       "q3": "Wo werden meine Daten gespeichert?",
-      "a3": "Alle Daten werden auf deutschen Servern gehostet. Sie bestimmen, welche Dokumente der Chatbot kennt.",
+      "a3": "Alle Daten liegen auf Ihrem eigenen Server. Sie bestimmen, welche Dokumente der Chatbot kennt.",
       "q4": "Wie erwerbe ich einen Plan?",
-      "a4": "Pläne werden direkt in der SerahrChat-Installation über Stripe Checkout erworben. Sie können mit einer 7-tägigen Testphase starten — ohne Zahlungsdaten."
+      "a4": "Pläne werden direkt in der SerahrChat-Installation über Stripe Checkout erworben.\nSie können mit einer 7-tägigen Testphase starten — ohne Zahlungsdaten."
     },
     "cta_bottom": {
       "title": "Bereit für besseren Kundenservice?",
-      "text": "Integrieren Sie SerahrChat in wenigen Minuten auf Ihrer Website. Wir übernehmen Setup und Betrieb.",
+      "text": "Integrieren Sie SerahrChat in wenigen Minuten auf Ihrer Website. Setup per Script, Betrieb auf Ihrem Server.",
       "button": "Jetzt starten",
-      "note": "Managed Service — Sie kümmern sich um Ihr Business, wir um den Chatbot."
+      "note": "Self-Hosted — volle Kontrolle über Ihre Daten. Automatische Updates inklusive."
     }
   },
   "count_page": {

@@ -1,6 +1,7 @@
 {
   "common": {
-    "contact_cta": "Get in Touch"
+    "contact_cta": "Get in Touch",
+    "recommended": "Recommended"
   },
   "meta": {
     "title": "Serahr — Custom Software Development",
@@ -31,7 +32,7 @@
     "chat": {
       "name": "SerahrChat",
       "tagline": "AI Chatbot for Websites",
-      "description": "AI-powered answers, multilingual (DE/EN), quick integration on any website. Full data control as a managed service.",
+      "description": "AI-powered answers, multilingual (DE/EN), quick integration on any website. Self-hosted on your own server — full data control.",
       "link": "Learn more"
     },
     "count": {
@@ -132,7 +133,7 @@
         "text": "Perfect for business groups and franchises. Each location has its own data and settings."
       },
       "privacy": {
-        "title": "GDPR Compliant",
+        "title": "Data Protection",
         "text": "Encrypted transmission, German server location, and audit log for traceability."
       },
       "sequences": {
@@ -229,12 +230,12 @@
         "text": "One small script tag is all it takes — works on any website."
       },
       "widget": {
-        "title": "Multilingual (DE/EN)",
-        "text": "Answers questions in German and English, automatically detected."
+        "title": "Multilingual",
+        "text": "Responds in the language it's addressed in. Optimized for German and English."
       },
       "managed": {
         "title": "Full Data Control",
-        "text": "Managed service with hosting in Germany. You control what the bot knows."
+        "text": "Self-hosted on your own server. Automatic security and image updates included."
       }
     },
     "pricing": {
@@ -286,19 +287,19 @@
       "label": "FAQ",
       "title": "Frequently Asked Questions",
       "q1": "How is SerahrChat integrated?",
-      "a1": "Just one script tag on your website. We handle setup, hosting, and operations as a managed service.",
+      "a1": "A setup script installs SerahrChat on your server. The widget is embedded on your website via a script tag.",
       "q2": "What languages are supported?",
       "a2": "Currently German and English — the language is detected automatically.",
       "q3": "Where is my data stored?",
-      "a3": "All data is hosted on German servers. You decide which documents the chatbot has access to.",
+      "a3": "All data stays on your own server. You decide which documents the chatbot has access to.",
       "q4": "How do I purchase a plan?",
-      "a4": "Plans are purchased directly in the SerahrChat installation via Stripe Checkout. You can start with a 7-day free trial — no payment details required."
+      "a4": "Plans are purchased directly in the SerahrChat installation via Stripe Checkout.\nYou can start with a 7-day free trial — no payment details required."
     },
     "cta_bottom": {
       "title": "Ready for better customer service?",
-      "text": "Integrate SerahrChat on your website in just a few minutes. We handle setup and operations.",
+      "text": "Integrate SerahrChat on your website in just a few minutes. Setup via script, running on your server.",
       "button": "Get Started",
-      "note": "Managed service — you focus on your business, we take care of the chatbot."
+      "note": "Self-hosted — full control over your data. Automatic updates included."
     }
   },
   "count_page": {
