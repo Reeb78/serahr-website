@@ -273,9 +273,11 @@
         "f4": "Unbegrenzte Laufzeit",
         "highlight": "Einmalzahlung — kein Abo"
       },
+      "lifetime_remaining": "Noch {remaining} von {limit} verfügbar",
       "vat_note": "Alle Preise verstehen sich netto zzgl. der gesetzlichen Mehrwertsteuer.",
       "purchase_note": "7 Tage kostenlos testen — keine Zahlungsdaten nötig."
     },
+    "beta_note": "SerahrChat befindet sich aktuell in der Testphase. Alle Funktionen sind verfügbar — der produktive Betrieb startet in Kürze.",
     "audience": {
       "title": "Perfekt für",
       "items": "Kleine Unternehmen, Dienstleister, Online-Shops, Praxen, Vereine"

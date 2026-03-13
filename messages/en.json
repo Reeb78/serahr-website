@@ -273,9 +273,11 @@
         "f4": "Perpetual license",
         "highlight": "One-time payment — no subscription"
       },
+      "lifetime_remaining": "{remaining} of {limit} remaining",
       "vat_note": "All prices are net prices excluding applicable VAT.",
       "purchase_note": "7-day free trial — no payment details required."
     },
+    "beta_note": "SerahrChat is currently in testing phase. All features are available — production launch is coming soon.",
     "audience": {
       "title": "Perfect For",
       "items": "Small businesses, Service providers, Online shops, Practices, Associations"

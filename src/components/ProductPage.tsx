@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { ExternalLink } from "lucide-react";
 import PageLayout from "./PageLayout";
 import ScrollReveal from "./ScrollReveal";
+import LifetimeCounter from "./LifetimeCounter";
 
 type Feature = {
   key: string;
@@ -23,6 +24,7 @@ export default function ProductPage({
   hasDocumentation,
   pricingTiers,
   hasFaq,
+  isBeta,
 }: {
   namespace: string;
   appUrl: string;
@@ -31,6 +33,7 @@ export default function ProductPage({
   hasDocumentation?: boolean;
   pricingTiers?: PricingTier[];
   hasFaq?: boolean;
+  isBeta?: boolean;
 }) {
   const t = useTranslations(`${namespace}_page`);
   const tCommon = useTranslations("common");
@@ -43,6 +46,11 @@ export default function ProductPage({
       <section className="hero-gradient px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-3xl text-center">
           <ScrollReveal>
+            {isBeta && (
+              <p className="mb-6 inline-block rounded-full border border-serahr-bright/30 bg-serahr-ice px-4 py-1.5 text-xs font-semibold text-serahr-medium">
+                {t("beta_note")}
+              </p>
+            )}
             <h1 className="font-heading text-4xl font-extrabold leading-tight tracking-tight text-serahr-deep sm:text-5xl lg:text-6xl">
               {t("headline")}
             </h1>
@@ -162,6 +170,7 @@ export default function ProductPage({
                     <p className="mt-4 text-xs font-semibold text-serahr-deep">
                       {t(`pricing.${tier.key}.highlight`)}
                     </p>
+                    {tier.isLifetime && <LifetimeCounter />}
                   </div>
                 </ScrollReveal>
               ))}

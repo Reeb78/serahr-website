@@ -20,6 +20,7 @@ export default function ChatPage({ params }: { params: { locale: string } }) {
       color="serahr-medium"
       hasDocumentation
       hasFaq
+      isBeta
       features={[
         { key: "ai", icon: <Bot className="h-6 w-6 text-serahr-medium" /> },
         { key: "setup", icon: <Zap className="h-6 w-6 text-serahr-medium" /> },
