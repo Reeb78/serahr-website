@@ -3,12 +3,13 @@ import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import LegalPage from "@/components/LegalPage";
 import EnglishDisclaimer from "@/components/EnglishDisclaimer";
+import LegalArchive from "@/components/LegalArchive";
 import { getAlternates } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "legal" });
-  return { title: t("terms_title", { product: "SerahrChat" }), alternates: getAlternates("/agb/chat") };
+  return { title: t("terms_title", { product: "SerahrChat" }), description: t("terms_description", { product: "SerahrChat" }), alternates: getAlternates("/agb/chat") };
 }
 
 export default function AGBChatPage({ params }: { params: { locale: string } }) {
@@ -20,6 +21,7 @@ export default function AGBChatPage({ params }: { params: { locale: string } }) 
       <LegalPage title={t("terms_title", { product: "SerahrChat" })}>
         <EnglishDisclaimer />
         <AGBChatEN />
+        <LegalArchive slug="agb/chat" />
       </LegalPage>
     );
   }
@@ -27,6 +29,7 @@ export default function AGBChatPage({ params }: { params: { locale: string } }) 
   return (
     <LegalPage title={t("terms_title", { product: "SerahrChat" })}>
       <AGBChatDE />
+      <LegalArchive slug="agb/chat" />
     </LegalPage>
   );
 }

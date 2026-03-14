@@ -8,7 +8,7 @@ import { getAlternates } from "@/lib/seo";
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "legal" });
-  return { title: t("docs_product_title", { product: "SerahrChat" }), alternates: getAlternates("/dokumentation/chat") };
+  return { title: t("docs_product_title", { product: "SerahrChat" }), description: t("docs_product_description", { product: "SerahrChat" }), alternates: getAlternates("/dokumentation/chat") };
 }
 
 export default function DokumentationChatPage({ params }: { params: { locale: string } }) {

@@ -333,6 +333,13 @@
       "items": "Events, Messen, Museen, öffentliche Einrichtungen, Festivals, Märkte"
     }
   },
+  "legal_archive": {
+    "current_version": "Aktuelle Fassung: Version {version}, gültig ab {date}.",
+    "archive_title": "Frühere Fassungen",
+    "version_label": "Version {version}",
+    "valid_period": "Gültig: {from} bis {to}",
+    "today": "heute"
+  },
   "legal": {
     "imprint_title": "Impressum",
     "imprint_description": "Impressum und Kontaktdaten von Serahr — Thorsten Ahrens, Köln.",
@@ -340,7 +347,9 @@
     "privacy_description": "Datenschutzerklärung von Serahr — Informationen zur Datenerhebung, Ihren Rechten und den Rechtsgrundlagen.",
     "privacy_product_title": "Datenschutzerklärung — {product}",
     "terms_title": "Allgemeine Geschäftsbedingungen — {product}",
+    "terms_description": "AGB für {product} — Leistungsumfang, Tarife, Kündigung und rechtliche Rahmenbedingungen.",
     "docs_product_title": "Dokumentation — {product}",
+    "docs_product_description": "Installationsanleitung und Dokumentation für {product} — Systemvoraussetzungen, Setup, Widget-Einbettung und mehr.",
     "back": "Zurück zur Startseite",
     "placeholder": "Diese Seite wird noch mit den rechtlichen Inhalten befüllt."
   }

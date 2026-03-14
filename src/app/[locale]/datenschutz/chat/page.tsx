@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import LegalPage from "@/components/LegalPage";
 import EnglishDisclaimer from "@/components/EnglishDisclaimer";
+import LegalArchive from "@/components/LegalArchive";
 import { getAlternates } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -20,6 +21,7 @@ export default function DatenschutzChatPage({ params }: { params: { locale: stri
       <LegalPage title={t("privacy_product_title", { product: "SerahrChat" })}>
         <EnglishDisclaimer />
         <DSEChatEN />
+        <LegalArchive slug="datenschutz/chat" />
       </LegalPage>
     );
   }
@@ -27,6 +29,7 @@ export default function DatenschutzChatPage({ params }: { params: { locale: stri
   return (
     <LegalPage title={t("privacy_product_title", { product: "SerahrChat" })}>
       <DSEChatDE />
+      <LegalArchive slug="datenschutz/chat" />
     </LegalPage>
   );
 }

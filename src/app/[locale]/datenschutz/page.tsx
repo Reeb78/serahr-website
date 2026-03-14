@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import LegalPage from "@/components/LegalPage";
 import EnglishDisclaimer from "@/components/EnglishDisclaimer";
+import LegalArchive from "@/components/LegalArchive";
 import { getAlternates } from "@/lib/seo";
 
 export async function generateMetadata({
@@ -88,7 +89,7 @@ export default function DatenschutzPage({ params }: { params: { locale: string }
         Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW).
       </p>
 
-      <p className="text-sm">Stand: Februar 2026</p>
+      <LegalArchive slug="datenschutz" />
 
       <hr />
 

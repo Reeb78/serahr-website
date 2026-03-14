@@ -333,6 +333,13 @@
       "items": "Events, Trade shows, Museums, Public facilities, Festivals, Markets"
     }
   },
+  "legal_archive": {
+    "current_version": "Current version: Version {version}, effective from {date}.",
+    "archive_title": "Previous Versions",
+    "version_label": "Version {version}",
+    "valid_period": "Valid: {from} to {to}",
+    "today": "today"
+  },
   "legal": {
     "imprint_title": "Imprint",
     "imprint_description": "Legal notice and contact details for Serahr — Thorsten Ahrens, Cologne, Germany.",
@@ -340,7 +347,9 @@
     "privacy_description": "Privacy policy of Serahr — information on data collection, your rights, and the legal basis for processing.",
     "privacy_product_title": "Privacy Policy — {product}",
     "terms_title": "Terms and Conditions — {product}",
+    "terms_description": "Terms and conditions for {product} — scope of services, plans, cancellation, and legal framework.",
     "docs_product_title": "Documentation — {product}",
+    "docs_product_description": "Installation guide and documentation for {product} — system requirements, setup, widget embedding, and more.",
     "back": "Back to homepage",
     "placeholder": "This page will be filled with legal content."
   }
