@@ -14,7 +14,8 @@ import {
 } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import ScrollReveal from "@/components/ScrollReveal";
-import { getAlternates } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
+import { getAlternates, SITE_URL } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -22,10 +23,48 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return { title: t("meta_title"), description: t("meta_description"), alternates: getAlternates("/remind") };
 }
 
-export default function RemindPage({ params }: { params: { locale: string } }) {
-  setRequestLocale(params.locale);
+export default async function RemindPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "remind_page" });
 
-  return <RemindPageContent />;
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [1, 2, 3, 4].map((n) => ({
+      "@type": "Question",
+      name: t(`faq.q${n}`),
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: t(`faq.a${n}`),
+      },
+    })),
+  };
+
+  const productLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "SerahrRemind",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    url: `${SITE_URL}/${locale}/remind`,
+    description: t("meta_description"),
+    offers: {
+      "@type": "AggregateOffer",
+      priceCurrency: "EUR",
+      lowPrice: "9.99",
+      highPrice: "49.99",
+      offerCount: "4",
+    },
+  };
+
+  return (
+    <>
+      <JsonLd data={faqLd} />
+      <JsonLd data={productLd} />
+      <RemindPageContent />
+    </>
+  );
 }
 
 function RemindPageContent() {
