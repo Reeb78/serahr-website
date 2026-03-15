@@ -70,7 +70,7 @@ function DoksChatDE() {
         </table>
       </div>
       <p>Wenn Ihre Domain <code>meinefirma.de</code> ist und der Server die IP <code>49.12.234.56</code> hat, wird daraus <code>chat.meinefirma.de → 49.12.234.56</code>. Die Änderung kann bis zu 30 Minuten dauern.</p>
-      <p><strong>Hinweis für Nutzer von Website-Baukästen</strong> (Wix, Jimdo, Squarespace u.a.): Wenn Ihre Website nur unter einer Adresse des Anbieters läuft (z.B. <code>meinefirma.wixsite.com</code>), können Sie keine Subdomains und keine DNS-Einträge verwalten. In diesem Fall benötigen Sie eine eigene Domain (ab ca. 1 EUR/Monat, z.B. bei IONOS oder Namecheap). Die Domain können Sie auch weiterhin auf Ihre bestehende Website weiterleiten und gleichzeitig eine Subdomain für SerahrChat nutzen. Bei Fragen hilft Ihnen unser Support gerne weiter.</p>
+      <p><strong>Hinweis für Nutzer von Website-Baukästen:</strong> Wenn Ihre Website nur unter einer Adresse des Baukasten-Anbieters läuft (z.B. <code>meinefirma.anbieter.com</code>), können Sie keine Subdomains und keine DNS-Einträge verwalten. In diesem Fall benötigen Sie eine eigene Domain (ab ca. 1 EUR/Monat, z.B. bei IONOS oder Namecheap). Die Domain können Sie auf Ihre bestehende Website weiterleiten und gleichzeitig eine Subdomain für SerahrChat nutzen. Bei Fragen hilft Ihnen unser Support gerne weiter.</p>
 
       <h2>3. Mit dem Server verbinden (SSH)</h2>
       <p>Öffnen Sie ein Terminal (Windows: PowerShell, macOS/Linux: Terminal) und verbinden Sie sich mit Ihrem Server:</p>
@@ -255,7 +255,7 @@ function DoksChatEN() {
         </table>
       </div>
       <p>If your domain is <code>mycompany.com</code> and your server IP is <code>49.12.234.56</code>, this creates <code>chat.mycompany.com → 49.12.234.56</code>. The change may take up to 30 minutes to propagate.</p>
-      <p><strong>Note for website builder users</strong> (Wix, Jimdo, Squarespace, etc.): If your website only runs under a builder address (e.g. <code>mycompany.wixsite.com</code>), you cannot manage subdomains or DNS records. In this case, you need your own domain (from approx. EUR 1/month, e.g. from IONOS or Namecheap). You can redirect the domain to your existing website and use a subdomain for SerahrChat at the same time. Contact our support if you need help.</p>
+      <p><strong>Note for website builder users:</strong> If your website only runs under a builder-provided address (e.g. <code>mycompany.builder.com</code>), you cannot manage subdomains or DNS records. In this case, you need your own domain (from approx. EUR 1/month, e.g. from IONOS or Namecheap). You can redirect the domain to your existing website and use a subdomain for SerahrChat at the same time. Contact our support if you need help.</p>
 
       <h2>3. Connect to Server (SSH)</h2>
       <p>Open a terminal (Windows: PowerShell, macOS/Linux: Terminal) and connect to your server:</p>
