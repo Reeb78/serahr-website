@@ -64,10 +64,12 @@ function DoksChatDE() {
 
       <h2>3. Mit dem Server verbinden (SSH)</h2>
       <p>Öffnen Sie ein Terminal (Windows: PowerShell, macOS/Linux: Terminal) und verbinden Sie sich mit Ihrem Server:</p>
+      <p><strong>Mit Passwort</strong> (falls Sie bei der Servererstellung keinen SSH-Key hinterlegt haben):</p>
       <pre><code>ssh root@&lt;Server-IP&gt;</code></pre>
-      <p>Ersetzen Sie <code>&lt;Server-IP&gt;</code> durch die IP-Adresse Ihres Servers, z.B. <code>ssh root@49.12.234.56</code></p>
-      <p>Falls Sie einen eigenen SSH-Key verwenden (z.B. <code>id_serahr</code>), geben Sie den Pfad an:</p>
+      <p>Sie werden nach dem Root-Passwort gefragt. Dieses haben Sie per E-Mail von Ihrem Hosting-Anbieter erhalten (z.B. Hetzner).</p>
+      <p><strong>Mit SSH-Key</strong> (empfohlen — falls Sie bei der Servererstellung einen Key hinterlegt haben):</p>
       <pre><code>ssh -i ~/.ssh/id_serahr root@&lt;Server-IP&gt;</code></pre>
+      <p>Ersetzen Sie <code>id_serahr</code> durch den Namen Ihres SSH-Keys und <code>&lt;Server-IP&gt;</code> durch die IP-Adresse Ihres Servers, z.B. <code>ssh -i ~/.ssh/id_rsa root@49.12.234.56</code></p>
       <p>Beim ersten Verbinden erscheint eine Sicherheitsabfrage — mit <code>yes</code> bestätigen.</p>
 
       <h2>4. Installation</h2>
@@ -231,10 +233,12 @@ function DoksChatEN() {
 
       <h2>3. Connect to Server (SSH)</h2>
       <p>Open a terminal (Windows: PowerShell, macOS/Linux: Terminal) and connect to your server:</p>
+      <p><strong>With password</strong> (if you did not set up an SSH key during server creation):</p>
       <pre><code>ssh root@&lt;Server-IP&gt;</code></pre>
-      <p>Replace <code>&lt;Server-IP&gt;</code> with your server&apos;s IP address, e.g. <code>ssh root@49.12.234.56</code></p>
-      <p>If you use a custom SSH key (e.g. <code>id_serahr</code>), specify the path:</p>
+      <p>You will be prompted for the root password. You received this via email from your hosting provider (e.g. Hetzner).</p>
+      <p><strong>With SSH key</strong> (recommended — if you set up a key during server creation):</p>
       <pre><code>ssh -i ~/.ssh/id_serahr root@&lt;Server-IP&gt;</code></pre>
+      <p>Replace <code>id_serahr</code> with the name of your SSH key and <code>&lt;Server-IP&gt;</code> with your server&apos;s IP address, e.g. <code>ssh -i ~/.ssh/id_rsa root@49.12.234.56</code></p>
       <p>On first connection, confirm the security prompt with <code>yes</code>.</p>
 
       <h2>4. Installation</h2>
