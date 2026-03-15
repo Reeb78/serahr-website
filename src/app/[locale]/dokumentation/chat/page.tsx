@@ -145,6 +145,7 @@ function DoksChatDE() {
   strategy="lazyOnload"
 />`}</code></pre>
       <p><strong>WordPress:</strong> Installieren Sie das SerahrChat-Plugin unter Plugins → Installieren → Plugin hochladen, und tragen Sie die URL Ihrer Instanz unter Einstellungen → SerahrChat ein. Der Code wird dann automatisch eingefügt.</p>
+      <p><strong>Website-Baukästen:</strong> Die meisten Anbieter bieten eine Funktion zum Einfügen von eigenem Code (oft unter Bezeichnungen wie &quot;Custom Code&quot;, &quot;Code-Einbettung&quot; oder &quot;HTML-Widget&quot;). Fügen Sie dort den oben gezeigten HTML-Code ein. Bei Fragen hilft unser Support gerne weiter.</p>
       <div className="overflow-x-auto">
         <table>
           <thead><tr><th>Parameter</th><th>Beschreibung</th><th>Standard</th></tr></thead>
@@ -329,6 +330,7 @@ function DoksChatEN() {
   strategy="lazyOnload"
 />`}</code></pre>
       <p><strong>WordPress:</strong> Install the SerahrChat plugin via Plugins → Add New → Upload Plugin, then enter your instance URL under Settings → SerahrChat. The code is then added automatically.</p>
+      <p><strong>Website builders:</strong> Most providers offer a way to add custom code (often called &quot;Custom Code&quot;, &quot;Code Embed&quot; or &quot;HTML Widget&quot;). Paste the HTML code shown above there. Contact our support if you need help.</p>
       <div className="overflow-x-auto">
         <table>
           <thead><tr><th>Parameter</th><th>Description</th><th>Default</th></tr></thead>
