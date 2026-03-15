@@ -95,7 +95,7 @@ function DoksChatDE() {
       <p>Am Ende erhalten Sie die URL zum Admin-Panel und ein initiales Passwort. <strong>Notieren Sie sich dieses Passwort!</strong></p>
 
       <h2>5. HTTPS aktivieren</h2>
-      <p>HTTPS ist für den Produktivbetrieb erforderlich. Das Setup nutzt kostenlose Let&apos;s Encrypt Zertifikate, die automatisch erneuert werden.</p>
+      <p>HTTPS ist für den Produktivbetrieb erforderlich. Das Setup nutzt <strong>kostenlose</strong> Let&apos;s Encrypt Zertifikate — es fallen keine zusätzlichen Kosten an. Die Zertifikate werden automatisch erneuert.</p>
       <p><strong>Voraussetzung:</strong> Ihre Domain muss per DNS bereits auf den Server zeigen (A-Record). Falls Sie den DNS-Eintrag gerade erst erstellt haben, warten Sie bis zu 30 Minuten.</p>
       <p>Das Script erwartet zwei Angaben:</p>
       <ul>
@@ -272,7 +272,7 @@ function DoksChatEN() {
       <p>At the end you will receive the admin panel URL and an initial password. <strong>Save this password!</strong></p>
 
       <h2>5. Enable HTTPS</h2>
-      <p>HTTPS is required for production use. The setup uses free Let&apos;s Encrypt certificates that renew automatically.</p>
+      <p>HTTPS is required for production use. The setup uses <strong>free</strong> Let&apos;s Encrypt certificates — no additional costs. Certificates are renewed automatically.</p>
       <p><strong>Prerequisite:</strong> Your domain must already point to the server via DNS (A record). If you just created the DNS entry, wait up to 30 minutes.</p>
       <p>The script requires two parameters:</p>
       <ul>
