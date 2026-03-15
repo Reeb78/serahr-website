@@ -119,15 +119,21 @@ function DoksChatDE() {
       </ol>
 
       <h2>7. Widget einbetten</h2>
-      <p>Fügen Sie folgenden Code in Ihre Website ein (vor <code>&lt;/body&gt;</code>). Für WordPress gibt es ein fertiges Plugin (siehe unten).</p>
-      <p><strong>HTML / statische Websites:</strong></p>
+      <p>Das Chat-Widget wird auf Ihrer bestehenden Firmenwebsite eingebunden. Ersetzen Sie im folgenden Code <code>chat.meinefirma.de</code> durch die Domain, die Sie in Schritt 5 für Ihre SerahrChat-Instanz eingerichtet haben.</p>
+      <p><strong>Beispiel:</strong> Wenn Ihre Firmenwebsite <code>www.meinefirma.de</code> ist und SerahrChat unter <code>chat.meinefirma.de</code> läuft, dann sieht der Code so aus:</p>
+      <p><strong>HTML / statische Websites</strong> — fügen Sie diesen Code vor <code>&lt;/body&gt;</code> ein:</p>
       <pre><code>{`<script
   src="https://chat.meinefirma.de/embed/widget.js"
   data-instance="https://chat.meinefirma.de"
   data-position="bottom-right"
   data-color="#2563eb"
 ></script>`}</code></pre>
-      <p><strong>Next.js / React</strong> — in Ihre <code>layout.tsx</code>:</p>
+      <p>Dabei müssen Sie nur zwei Stellen anpassen:</p>
+      <ul>
+        <li><code>src</code> und <code>data-instance</code> — Ersetzen Sie <code>chat.meinefirma.de</code> durch Ihre SerahrChat-Domain</li>
+        <li><code>data-color</code> — Optional: Passen Sie die Farbe an Ihr Firmendesign an (z.B. <code>#e11d48</code> für Rot)</li>
+      </ul>
+      <p><strong>Next.js / React</strong> — in Ihrer <code>layout.tsx</code>:</p>
       <pre><code>{`import Script from 'next/script'
 
 <Script
@@ -137,7 +143,7 @@ function DoksChatDE() {
   data-color="#2563eb"
   strategy="lazyOnload"
 />`}</code></pre>
-      <p><strong>WordPress:</strong> Installieren Sie das SerahrChat-Plugin unter Plugins → Installieren → Plugin hochladen, und tragen Sie die URL Ihrer Instanz unter Einstellungen → SerahrChat ein.</p>
+      <p><strong>WordPress:</strong> Installieren Sie das SerahrChat-Plugin unter Plugins → Installieren → Plugin hochladen, und tragen Sie die URL Ihrer Instanz unter Einstellungen → SerahrChat ein. Der Code wird dann automatisch eingefügt.</p>
       <div className="overflow-x-auto">
         <table>
           <thead><tr><th>Parameter</th><th>Beschreibung</th><th>Standard</th></tr></thead>
@@ -296,14 +302,20 @@ function DoksChatEN() {
       </ol>
 
       <h2>7. Embed Widget</h2>
-      <p>Add the following code to your website (before <code>&lt;/body&gt;</code>). A WordPress plugin is also available (see below).</p>
-      <p><strong>HTML / static websites:</strong></p>
+      <p>The chat widget is embedded on your existing company website. Replace <code>chat.mycompany.com</code> in the code below with the domain you set up for your SerahrChat instance in step 5.</p>
+      <p><strong>Example:</strong> If your company website is <code>www.mycompany.com</code> and SerahrChat runs on <code>chat.mycompany.com</code>, the code looks like this:</p>
+      <p><strong>HTML / static websites</strong> — add this code before <code>&lt;/body&gt;</code>:</p>
       <pre><code>{`<script
   src="https://chat.mycompany.com/embed/widget.js"
   data-instance="https://chat.mycompany.com"
   data-position="bottom-right"
   data-color="#2563eb"
 ></script>`}</code></pre>
+      <p>You only need to change two things:</p>
+      <ul>
+        <li><code>src</code> and <code>data-instance</code> — Replace <code>chat.mycompany.com</code> with your SerahrChat domain</li>
+        <li><code>data-color</code> — Optional: Match the color to your brand (e.g. <code>#e11d48</code> for red)</li>
+      </ul>
       <p><strong>Next.js / React</strong> — in your <code>layout.tsx</code>:</p>
       <pre><code>{`import Script from 'next/script'
 
@@ -314,7 +326,7 @@ function DoksChatEN() {
   data-color="#2563eb"
   strategy="lazyOnload"
 />`}</code></pre>
-      <p><strong>WordPress:</strong> Install the SerahrChat plugin via Plugins → Add New → Upload Plugin, then enter your instance URL under Settings → SerahrChat.</p>
+      <p><strong>WordPress:</strong> Install the SerahrChat plugin via Plugins → Add New → Upload Plugin, then enter your instance URL under Settings → SerahrChat. The code is then added automatically.</p>
       <div className="overflow-x-auto">
         <table>
           <thead><tr><th>Parameter</th><th>Description</th><th>Default</th></tr></thead>
