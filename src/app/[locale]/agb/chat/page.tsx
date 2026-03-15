@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import LegalPage from "@/components/LegalPage";
 import EnglishDisclaimer from "@/components/EnglishDisclaimer";
@@ -12,11 +11,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return { title: t("terms_title", { product: "SerahrChat" }), description: t("terms_description", { product: "SerahrChat" }), alternates: getAlternates("/agb/chat") };
 }
 
-export default function AGBChatPage({ params }: { params: { locale: string } }) {
-  setRequestLocale(params.locale);
-  const t = useTranslations("legal");
+export default async function AGBChatPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "legal" });
 
-  if (params.locale === "en") {
+  if (locale === "en") {
     return (
       <LegalPage title={t("terms_title", { product: "SerahrChat" })}>
         <EnglishDisclaimer />

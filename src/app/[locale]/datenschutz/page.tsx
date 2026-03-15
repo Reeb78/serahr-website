@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { useTranslations } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import LegalPage from "@/components/LegalPage";
@@ -186,13 +185,14 @@ function DatenschutzEN() {
   );
 }
 
-export default function DatenschutzPage({ params }: { params: { locale: string } }) {
-  setRequestLocale(params.locale);
-  const t = useTranslations("legal");
+export default async function DatenschutzPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "legal" });
 
   return (
     <LegalPage title={t("privacy_title")}>
-      {params.locale === "en" ? <DatenschutzEN /> : <DatenschutzDE />}
+      {locale === "en" ? <DatenschutzEN /> : <DatenschutzDE />}
       <LegalArchive slug="datenschutz" />
     </LegalPage>
   );
