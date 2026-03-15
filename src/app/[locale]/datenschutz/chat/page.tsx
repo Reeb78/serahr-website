@@ -18,7 +18,7 @@ export default async function DatenschutzChatPage({ params }: { params: Promise<
 
   if (locale === "en") {
     return (
-      <LegalPage title={t("privacy_product_title", { product: "SerahrChat" })}>
+      <LegalPage title={t("privacy_product_title", { product: "SerahrChat" })} slug="chat" hasDocumentation>
         <EnglishDisclaimer />
         <DSEChatEN />
         <LegalArchive slug="datenschutz/chat" />
@@ -27,7 +27,7 @@ export default async function DatenschutzChatPage({ params }: { params: Promise<
   }
 
   return (
-    <LegalPage title={t("privacy_product_title", { product: "SerahrChat" })}>
+    <LegalPage title={t("privacy_product_title", { product: "SerahrChat" })} slug="chat" hasDocumentation>
       <DSEChatDE />
       <LegalArchive slug="datenschutz/chat" />
     </LegalPage>

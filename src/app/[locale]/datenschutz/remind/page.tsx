@@ -18,7 +18,7 @@ export default async function DatenschutzRemindPage({ params }: { params: Promis
 
   if (locale === "en") {
     return (
-      <LegalPage title={t("privacy_product_title", { product: "SerahrRemind" })}>
+      <LegalPage title={t("privacy_product_title", { product: "SerahrRemind" })} slug="remind">
         <EnglishDisclaimer />
         <DSERemindEN />
         <LegalArchive slug="datenschutz/remind" />
@@ -27,7 +27,7 @@ export default async function DatenschutzRemindPage({ params }: { params: Promis
   }
 
   return (
-    <LegalPage title={t("privacy_product_title", { product: "SerahrRemind" })}>
+    <LegalPage title={t("privacy_product_title", { product: "SerahrRemind" })} slug="remind">
       <DSERemindDE />
       <LegalArchive slug="datenschutz/remind" />
     </LegalPage>

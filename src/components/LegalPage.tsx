@@ -5,11 +5,16 @@ import PageLayout from "./PageLayout";
 export default function LegalPage({
   title,
   children,
+  slug,
+  hasDocumentation,
 }: {
   title: string;
   children?: React.ReactNode;
+  slug?: string;
+  hasDocumentation?: boolean;
 }) {
   const t = useTranslations("legal");
+  const tFooter = useTranslations("footer");
 
   return (
     <PageLayout>
@@ -34,6 +39,21 @@ export default function LegalPage({
               </p>
             )}
           </div>
+          {slug && (
+            <div className="mt-16 flex flex-wrap justify-center gap-6 text-sm text-muted">
+              <Link href={`/agb/${slug}`} className="hover:text-serahr-deep">
+                {tFooter("terms")}
+              </Link>
+              <Link href={`/datenschutz/${slug}`} className="hover:text-serahr-deep">
+                {tFooter("privacy")}
+              </Link>
+              {hasDocumentation && (
+                <Link href={`/dokumentation/${slug}`} className="hover:text-serahr-deep">
+                  {tFooter("documentation")}
+                </Link>
+              )}
+            </div>
+          )}
         </div>
       </section>
     </PageLayout>

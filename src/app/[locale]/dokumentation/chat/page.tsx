@@ -17,14 +17,14 @@ export default async function DokumentationChatPage({ params }: { params: Promis
 
   if (locale === "en") {
     return (
-      <LegalPage title={t("docs_product_title", { product: "SerahrChat" })}>
+      <LegalPage title={t("docs_product_title", { product: "SerahrChat" })} slug="chat" hasDocumentation>
         <DoksChatEN />
       </LegalPage>
     );
   }
 
   return (
-    <LegalPage title={t("docs_product_title", { product: "SerahrChat" })}>
+    <LegalPage title={t("docs_product_title", { product: "SerahrChat" })} slug="chat" hasDocumentation>
       <DoksChatDE />
     </LegalPage>
   );

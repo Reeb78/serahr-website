@@ -18,7 +18,7 @@ export default async function AGBChatPage({ params }: { params: Promise<{ locale
 
   if (locale === "en") {
     return (
-      <LegalPage title={t("terms_title", { product: "SerahrChat" })}>
+      <LegalPage title={t("terms_title", { product: "SerahrChat" })} slug="chat" hasDocumentation>
         <EnglishDisclaimer />
         <AGBChatEN />
         <LegalArchive slug="agb/chat" />
@@ -27,7 +27,7 @@ export default async function AGBChatPage({ params }: { params: Promise<{ locale
   }
 
   return (
-    <LegalPage title={t("terms_title", { product: "SerahrChat" })}>
+    <LegalPage title={t("terms_title", { product: "SerahrChat" })} slug="chat" hasDocumentation>
       <AGBChatDE />
       <LegalArchive slug="agb/chat" />
     </LegalPage>
