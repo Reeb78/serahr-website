@@ -19,14 +19,9 @@ export async function generateMetadata({
   };
 }
 
-export default function ImpressumPage({ params }: { params: { locale: string } }) {
-  setRequestLocale(params.locale);
-  const t = useTranslations("legal");
-
+function ImpressumDE() {
   return (
-    <LegalPage title={t("imprint_title")}>
-      {params.locale === "en" && <EnglishDisclaimer />}
-
+    <>
       <h2>Angaben gemäß § 5 TMG</h2>
       <p>
         Thorsten Ahrens<br />
@@ -81,6 +76,80 @@ export default function ImpressumPage({ params }: { params: { locale: string } }
         Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
         Verbraucherschlichtungsstelle teilzunehmen.
       </p>
+    </>
+  );
+}
+
+function ImpressumEN() {
+  return (
+    <>
+      <EnglishDisclaimer />
+
+      <h2>Information pursuant to § 5 TMG</h2>
+      <p>
+        Thorsten Ahrens<br />
+        Zillestr. 75<br />
+        51067 Cologne<br />
+        Germany
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Phone: +49 174 6628053<br />
+        Email: contact@serahr.de
+      </p>
+
+      <h2>VAT ID</h2>
+      <p>
+        VAT identification number pursuant to § 27 a of the German VAT Act:<br />
+        DE363343172
+      </p>
+
+      <h2>Responsible for Content pursuant to § 55 (2) RStV</h2>
+      <p>
+        Thorsten Ahrens<br />
+        Zillestr. 75<br />
+        51067 Cologne
+      </p>
+
+      <h2>Scope</h2>
+      <p>This legal notice applies to the following websites:</p>
+      <ul>
+        <li>serahr.de</li>
+        <li>serahrchat.serahr.de</li>
+        <li>serahrremind.serahr.de</li>
+        <li>serahrcount.serahr.de</li>
+        <li>serahrphoneagent.serahr.de</li>
+        <li>kineahnung.de</li>
+        <li>kieneangst.de</li>
+      </ul>
+
+      <h2>Dispute Resolution</h2>
+      <p>
+        The European Commission provides a platform for online dispute resolution (ODR):{" "}
+        <a
+          href="https://ec.europa.eu/consumers/odr/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://ec.europa.eu/consumers/odr/
+        </a>
+      </p>
+      <p>
+        We are neither willing nor obliged to participate in dispute resolution proceedings
+        before a consumer arbitration board.
+      </p>
+    </>
+  );
+}
+
+export default function ImpressumPage({ params }: { params: { locale: string } }) {
+  setRequestLocale(params.locale);
+  const t = useTranslations("legal");
+
+  return (
+    <LegalPage title={t("imprint_title")}>
+      {params.locale === "en" ? <ImpressumEN /> : <ImpressumDE />}
     </LegalPage>
   );
 }

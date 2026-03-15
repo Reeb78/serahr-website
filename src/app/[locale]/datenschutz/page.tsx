@@ -21,14 +21,9 @@ export async function generateMetadata({
   };
 }
 
-export default function DatenschutzPage({ params }: { params: { locale: string } }) {
-  setRequestLocale(params.locale);
-  const t = useTranslations("legal");
-
+function DatenschutzDE() {
   return (
-    <LegalPage title={t("privacy_title")}>
-      {params.locale === "en" && <EnglishDisclaimer />}
-
+    <>
       <h2>Verantwortlicher</h2>
       <p>
         Thorsten Ahrens<br />
@@ -89,8 +84,6 @@ export default function DatenschutzPage({ params }: { params: { locale: string }
         Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW).
       </p>
 
-      <LegalArchive slug="datenschutz" />
-
       <hr />
 
       <h2>Produktspezifische Datenschutzerklärungen</h2>
@@ -106,6 +99,101 @@ export default function DatenschutzPage({ params }: { params: { locale: string }
           </Link>
         </li>
       </ul>
+    </>
+  );
+}
+
+function DatenschutzEN() {
+  return (
+    <>
+      <EnglishDisclaimer />
+
+      <h2>Controller</h2>
+      <p>
+        Thorsten Ahrens<br />
+        Zillestr. 75<br />
+        51067 Cologne, Germany<br />
+        Email: contact@serahr.de
+      </p>
+
+      <h2>Data Collection on This Website</h2>
+      <p>
+        This website collects personal data exclusively in the context of contact requests.
+        When communicating via email or the contact form, your data (name, email address,
+        message content) is stored in order to process your enquiry.
+      </p>
+
+      <h2>Contact Form</h2>
+      <p>
+        When you send us enquiries via the contact form, the data you provide (your email address,
+        your name, the selected topic, and your message) is stored in order to process your request.
+        Your data will not be shared with third parties without your consent.
+      </p>
+
+      <h2>Legal Basis</h2>
+      <p>
+        Your data is processed on the basis of Art. 6(1)(b) GDPR (pre-contractual measures)
+        and Art. 6(1)(f) GDPR (legitimate interest in the efficient handling of enquiries).
+      </p>
+
+      <h2>Storage Duration</h2>
+      <p>
+        Your contact data will be deleted as soon as it is no longer required for the purpose
+        of processing and no statutory retention obligations apply.
+      </p>
+
+      <h2>Hosting</h2>
+      <p>
+        This website is hosted externally. Personal data collected on this website (e.g. IP addresses,
+        contact requests) is stored on the servers of the hosting provider. Processing is carried
+        out on the basis of Art. 6(1)(f) GDPR.
+      </p>
+
+      <h2>Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access your stored data (Art. 15 GDPR)</li>
+        <li>Rectification of inaccurate data (Art. 16 GDPR)</li>
+        <li>Erasure of your data (Art. 17 GDPR)</li>
+        <li>Restriction of processing (Art. 18 GDPR)</li>
+        <li>Data portability (Art. 20 GDPR)</li>
+        <li>Object to processing (Art. 21 GDPR)</li>
+      </ul>
+
+      <h2>Right to Lodge a Complaint</h2>
+      <p>
+        You have the right to lodge a complaint with a supervisory authority. The competent authority
+        is the State Commissioner for Data Protection and Freedom of Information of North
+        Rhine-Westphalia (LDI NRW).
+      </p>
+
+      <hr />
+
+      <h2>Product-Specific Privacy Policies</h2>
+      <ul>
+        <li>
+          <Link href="/datenschutz/remind">
+            Privacy Policy — SerahrRemind →
+          </Link>
+        </li>
+        <li>
+          <Link href="/datenschutz/chat">
+            Privacy Policy — SerahrChat →
+          </Link>
+        </li>
+      </ul>
+    </>
+  );
+}
+
+export default function DatenschutzPage({ params }: { params: { locale: string } }) {
+  setRequestLocale(params.locale);
+  const t = useTranslations("legal");
+
+  return (
+    <LegalPage title={t("privacy_title")}>
+      {params.locale === "en" ? <DatenschutzEN /> : <DatenschutzDE />}
+      <LegalArchive slug="datenschutz" />
     </LegalPage>
   );
 }
