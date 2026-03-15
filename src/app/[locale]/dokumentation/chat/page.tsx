@@ -109,14 +109,14 @@ function DoksChatDE() {
 
       <h2>6. Setup-Wizard</h2>
       <p>Öffnen Sie <code>https://chat.meinefirma.de/admin/ui/</code> im Browser. Der Setup-Wizard führt Sie durch:</p>
-      <ol>
+      <ul>
         <li><strong>Konto erstellen</strong> — Benutzername, Passwort und E-Mail-Adresse angeben. Sie erhalten ein Einmalpasswort per E-Mail zur Bestätigung</li>
         <li><strong>KI-Anbieter wählen</strong> — OpenRouter (empfohlen), OpenAI, Mistral oder lokal (Ollama / LM Studio)</li>
         <li><strong>API-Key eingeben</strong> — Ihren Schlüssel vom gewählten Anbieter</li>
         <li><strong>KI-Modell wählen</strong> — Schnell &amp; günstig, ausgewogen oder höchste Qualität</li>
         <li><strong>Dokumente hochladen</strong> — PDFs, Word-Dateien oder Textdokumente</li>
         <li><strong>Test</strong> — Stellen Sie eine Frage, um die Antwortqualität zu prüfen</li>
-      </ol>
+      </ul>
 
       <h2>7. Widget einbetten</h2>
       <p>Das Chat-Widget wird auf Ihrer bestehenden Firmenwebsite eingebunden. Ersetzen Sie im folgenden Code <code>chat.meinefirma.de</code> durch die Domain, die Sie in Schritt 5 für Ihre SerahrChat-Instanz eingerichtet haben.</p>
@@ -292,14 +292,14 @@ function DoksChatEN() {
 
       <h2>6. Setup Wizard</h2>
       <p>Open <code>https://chat.mycompany.com/admin/ui/</code> in your browser. The setup wizard guides you through:</p>
-      <ol>
+      <ul>
         <li><strong>Create account</strong> — Enter username, password and email address. You will receive a one-time password via email for verification</li>
         <li><strong>Choose AI provider</strong> — OpenRouter (recommended), OpenAI, Mistral, or local (Ollama / LM Studio)</li>
         <li><strong>Enter API key</strong> — Your key from the chosen provider</li>
         <li><strong>Choose AI model</strong> — Fast &amp; cheap, balanced, or highest quality</li>
         <li><strong>Upload documents</strong> — PDFs, Word files, or text documents</li>
         <li><strong>Test</strong> — Ask a question to verify answer quality</li>
-      </ol>
+      </ul>
 
       <h2>7. Embed Widget</h2>
       <p>The chat widget is embedded on your existing company website. Replace <code>chat.mycompany.com</code> in the code below with the domain you set up for your SerahrChat instance in step 5.</p>
