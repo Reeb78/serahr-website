@@ -54,7 +54,7 @@ function DoksChatDE() {
       <ul>
         <li>Eine Domain oder Subdomain (z.B. <code>chat.meinefirma.de</code>), die per DNS auf den Server zeigt</li>
         <li>Einen OpenRouter API-Key — <em>oder</em> ein lokales KI-Modell mit Ollama oder LM Studio</li>
-        <li>Optional: Einen SerahrChat-Lizenzschlüssel (ohne startet eine 7-Tage-Testversion)</li>
+        <li>Optional: Einen SerahrChat-Lizenzschlüssel (die Installation startet automatisch mit einer 7-Tage-Testversion)</li>
       </ul>
 
       <h2>2. Server vorbereiten</h2>
@@ -80,7 +80,7 @@ function DoksChatDE() {
         <li>Installiert Docker und git (falls nötig)</li>
         <li>Erstellt Verzeichnisse unter <code>/opt/serahrchat/</code></li>
         <li>Generiert einen Master Key (Verschlüsselungsschlüssel für Ihre Dokumente)</li>
-        <li>Fragt nach dem Lizenzschlüssel (oder startet eine 7-Tage-Testversion)</li>
+        <li>Startet automatisch eine 7-Tage-Testversion</li>
         <li>Baut und startet die Docker-Container</li>
       </ol>
       <p>Am Ende erhalten Sie die URL zum Admin-Panel und ein initiales Passwort. <strong>Notieren Sie sich dieses Passwort!</strong></p>
@@ -224,7 +224,7 @@ function DoksChatEN() {
       <ul>
         <li>A domain or subdomain (e.g. <code>chat.mycompany.com</code>) with DNS pointing to the server</li>
         <li>An OpenRouter API key — <em>or</em> a local AI model with Ollama or LM Studio</li>
-        <li>Optional: A SerahrChat license key (without one, a 7-day free trial starts)</li>
+        <li>Optional: A SerahrChat license key (the installation automatically starts with a 7-day free trial)</li>
       </ul>
 
       <h2>2. Server Setup</h2>
@@ -248,7 +248,7 @@ function DoksChatEN() {
         <li>Installs Docker and git (if needed)</li>
         <li>Creates directories under <code>/opt/serahrchat/</code></li>
         <li>Generates a Master Key (encryption key for your documents)</li>
-        <li>Prompts for the license key (or starts a 7-day trial)</li>
+        <li>Automatically starts a 7-day free trial</li>
         <li>Builds and starts the Docker containers</li>
       </ol>
       <p>At the end you will receive the admin panel URL and an initial password. <strong>Save this password!</strong></p>
