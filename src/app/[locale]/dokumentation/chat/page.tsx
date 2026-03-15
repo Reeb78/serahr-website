@@ -52,7 +52,7 @@ function DoksChatDE() {
       <p><strong>Software</strong> (wird bei Bedarf automatisch installiert): Docker &gt;= 20.x, Docker Compose v2, git, curl</p>
       <p><strong>Zusätzlich benötigt:</strong></p>
       <ul>
-        <li>Eine Domain oder Subdomain (z.B. <code>chat.meinefirma.de</code>), die per DNS auf den Server zeigt</li>
+        <li>Eine <strong>eigene Domain</strong> (z.B. <code>meinefirma.de</code>), bei der Sie DNS-Einträge verwalten können. Davon wird eine Subdomain wie <code>chat.meinefirma.de</code> auf den Server eingerichtet. Eine eigene Domain ist notwendig, weil HTTPS-Zertifikate nicht für IP-Adressen ausgestellt werden können.</li>
         <li>Einen OpenRouter API-Key — <em>oder</em> ein lokales KI-Modell mit Ollama oder LM Studio</li>
         <li>Optional: Einen SerahrChat-Lizenzschlüssel (die Installation startet automatisch mit einer 7-Tage-Testversion)</li>
       </ul>
@@ -70,6 +70,7 @@ function DoksChatDE() {
         </table>
       </div>
       <p>Wenn Ihre Domain <code>meinefirma.de</code> ist und der Server die IP <code>49.12.234.56</code> hat, wird daraus <code>chat.meinefirma.de → 49.12.234.56</code>. Die Änderung kann bis zu 30 Minuten dauern.</p>
+      <p><strong>Hinweis für Nutzer von Website-Baukästen</strong> (Wix, Jimdo, Squarespace u.a.): Wenn Ihre Website nur unter einer Adresse des Anbieters läuft (z.B. <code>meinefirma.wixsite.com</code>), können Sie keine Subdomains und keine DNS-Einträge verwalten. In diesem Fall benötigen Sie eine eigene Domain (ab ca. 1 EUR/Monat, z.B. bei IONOS oder Namecheap). Die Domain können Sie auch weiterhin auf Ihre bestehende Website weiterleiten und gleichzeitig eine Subdomain für SerahrChat nutzen. Bei Fragen hilft Ihnen unser Support gerne weiter.</p>
 
       <h2>3. Mit dem Server verbinden (SSH)</h2>
       <p>Öffnen Sie ein Terminal (Windows: PowerShell, macOS/Linux: Terminal) und verbinden Sie sich mit Ihrem Server:</p>
@@ -237,7 +238,7 @@ function DoksChatEN() {
       <p><strong>Software</strong> (installed automatically if needed): Docker &gt;= 20.x, Docker Compose v2, git, curl</p>
       <p><strong>Additionally required:</strong></p>
       <ul>
-        <li>A domain or subdomain (e.g. <code>chat.mycompany.com</code>) with DNS pointing to the server</li>
+        <li>Your <strong>own domain</strong> (e.g. <code>mycompany.com</code>) where you can manage DNS records. A subdomain like <code>chat.mycompany.com</code> will be pointed to the server. A custom domain is required because HTTPS certificates cannot be issued for IP addresses.</li>
         <li>An OpenRouter API key — <em>or</em> a local AI model with Ollama or LM Studio</li>
         <li>Optional: A SerahrChat license key (the installation automatically starts with a 7-day free trial)</li>
       </ul>
@@ -254,6 +255,7 @@ function DoksChatEN() {
         </table>
       </div>
       <p>If your domain is <code>mycompany.com</code> and your server IP is <code>49.12.234.56</code>, this creates <code>chat.mycompany.com → 49.12.234.56</code>. The change may take up to 30 minutes to propagate.</p>
+      <p><strong>Note for website builder users</strong> (Wix, Jimdo, Squarespace, etc.): If your website only runs under a builder address (e.g. <code>mycompany.wixsite.com</code>), you cannot manage subdomains or DNS records. In this case, you need your own domain (from approx. EUR 1/month, e.g. from IONOS or Namecheap). You can redirect the domain to your existing website and use a subdomain for SerahrChat at the same time. Contact our support if you need help.</p>
 
       <h2>3. Connect to Server (SSH)</h2>
       <p>Open a terminal (Windows: PowerShell, macOS/Linux: Terminal) and connect to your server:</p>
