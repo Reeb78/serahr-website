@@ -60,7 +60,16 @@ function DoksChatDE() {
       <h2>2. Server vorbereiten</h2>
       <p>Wir empfehlen <strong>Hetzner Cloud</strong> als Hosting-Anbieter: Ein <strong>CX23</strong> genügt (2 vCPU, 4 GB RAM, 40 GB SSD, ab ca. 4 EUR/Monat). Rechenzentrum in Deutschland.</p>
       <p>Jeder Linux-Server mit den oben genannten Mindestvoraussetzungen ist geeignet. Stellen Sie sicher, dass Ports 80 und 443 in der Firewall geöffnet sind und SSH-Zugang besteht.</p>
-      <p><strong>DNS einrichten:</strong> Erstellen Sie bei Ihrem Domain-Provider einen A-Record, der Ihre Subdomain auf die Server-IP zeigt.</p>
+      <p><strong>DNS einrichten:</strong> Erstellen Sie bei Ihrem Domain-Provider einen A-Record, der Ihre Subdomain auf die Server-IP zeigt:</p>
+      <div className="overflow-x-auto">
+        <table>
+          <thead><tr><th>Typ</th><th>Name</th><th>Wert</th><th>TTL</th></tr></thead>
+          <tbody>
+            <tr><td>A</td><td>chat</td><td><code>&lt;Server-IP&gt;</code></td><td>3600</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Wenn Ihre Domain <code>meinefirma.de</code> ist und der Server die IP <code>49.12.234.56</code> hat, wird daraus <code>chat.meinefirma.de → 49.12.234.56</code>. Die Änderung kann bis zu 30 Minuten dauern.</p>
 
       <h2>3. Mit dem Server verbinden (SSH)</h2>
       <p>Öffnen Sie ein Terminal (Windows: PowerShell, macOS/Linux: Terminal) und verbinden Sie sich mit Ihrem Server:</p>
@@ -229,7 +238,16 @@ function DoksChatEN() {
 
       <h2>2. Server Setup</h2>
       <p>We recommend <strong>Hetzner Cloud</strong>: A <strong>CX23</strong> is sufficient (2 vCPU, 4 GB RAM, 40 GB SSD, from approx. EUR 4/month). Data center in Germany.</p>
-      <p><strong>DNS setup:</strong> Create an A record at your domain provider pointing your subdomain to the server IP.</p>
+      <p><strong>DNS setup:</strong> Create an A record at your domain provider pointing your subdomain to the server IP:</p>
+      <div className="overflow-x-auto">
+        <table>
+          <thead><tr><th>Type</th><th>Name</th><th>Value</th><th>TTL</th></tr></thead>
+          <tbody>
+            <tr><td>A</td><td>chat</td><td><code>&lt;Server-IP&gt;</code></td><td>3600</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>If your domain is <code>mycompany.com</code> and your server IP is <code>49.12.234.56</code>, this creates <code>chat.mycompany.com → 49.12.234.56</code>. The change may take up to 30 minutes to propagate.</p>
 
       <h2>3. Connect to Server (SSH)</h2>
       <p>Open a terminal (Windows: PowerShell, macOS/Linux: Terminal) and connect to your server:</p>
