@@ -92,7 +92,7 @@ function DoksChatDE() {
         <li>Startet automatisch eine 7-Tage-Testversion</li>
         <li>Baut und startet die Docker-Container</li>
       </ol>
-      <p>Am Ende erhalten Sie die URL zum Admin-Panel und ein initiales Passwort. <strong>Notieren Sie sich dieses Passwort!</strong></p>
+      <p>Am Ende erhalten Sie die URL zum Admin-Panel.</p>
 
       <h2>5. HTTPS aktivieren</h2>
       <p>HTTPS ist für den Produktivbetrieb erforderlich. Das Setup nutzt <strong>kostenlose</strong> Let&apos;s Encrypt Zertifikate — es fallen keine zusätzlichen Kosten an. Die Zertifikate werden automatisch erneuert.</p>
@@ -108,9 +108,9 @@ function DoksChatDE() {
       <p>Das Script beantragt ein TLS-Zertifikat, konfiguriert nginx für HTTPS und richtet automatische Zertifikatserneuerung ein. HTTP wird automatisch auf HTTPS umgeleitet.</p>
 
       <h2>6. Setup-Wizard</h2>
-      <p>Öffnen Sie <code>https://chat.meinefirma.de/admin/ui/</code> im Browser und melden Sie sich mit dem initialen Passwort an. Der Setup-Wizard führt Sie durch:</p>
+      <p>Öffnen Sie <code>https://chat.meinefirma.de/admin/ui/</code> im Browser. Der Setup-Wizard führt Sie durch:</p>
       <ol>
-        <li><strong>Passwort ändern</strong> — Vergeben Sie ein sicheres Passwort</li>
+        <li><strong>Konto erstellen</strong> — Benutzername, Passwort und E-Mail-Adresse angeben. Sie erhalten ein Einmalpasswort per E-Mail zur Bestätigung</li>
         <li><strong>KI-Anbieter wählen</strong> — OpenRouter (empfohlen), OpenAI, Mistral oder lokal (Ollama / LM Studio)</li>
         <li><strong>API-Key eingeben</strong> — Ihren Schlüssel vom gewählten Anbieter</li>
         <li><strong>KI-Modell wählen</strong> — Schnell &amp; günstig, ausgewogen oder höchste Qualität</li>
@@ -269,7 +269,7 @@ function DoksChatEN() {
         <li>Automatically starts a 7-day free trial</li>
         <li>Builds and starts the Docker containers</li>
       </ol>
-      <p>At the end you will receive the admin panel URL and an initial password. <strong>Save this password!</strong></p>
+      <p>At the end you will receive the admin panel URL.</p>
 
       <h2>5. Enable HTTPS</h2>
       <p>HTTPS is required for production use. The setup uses <strong>free</strong> Let&apos;s Encrypt certificates — no additional costs. Certificates are renewed automatically.</p>
@@ -285,8 +285,9 @@ function DoksChatEN() {
       <p>The script requests a TLS certificate, configures nginx for HTTPS, and sets up automatic certificate renewal. HTTP is automatically redirected to HTTPS.</p>
 
       <h2>6. Setup Wizard</h2>
+      <p>Open <code>https://chat.mycompany.com/admin/ui/</code> in your browser. The setup wizard guides you through:</p>
       <ol>
-        <li><strong>Change password</strong> — Set a secure password</li>
+        <li><strong>Create account</strong> — Enter username, password and email address. You will receive a one-time password via email for verification</li>
         <li><strong>Choose AI provider</strong> — OpenRouter (recommended), OpenAI, Mistral, or local (Ollama / LM Studio)</li>
         <li><strong>Enter API key</strong> — Your key from the chosen provider</li>
         <li><strong>Choose AI model</strong> — Fast &amp; cheap, balanced, or highest quality</li>
