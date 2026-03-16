@@ -37,7 +37,7 @@ export default async function DatenschutzChatPage({ params }: { params: Promise<
 function DSEChatDE() {
   return (
     <>
-      <p className="text-sm text-muted">Version 1.1 — gültig ab 01.04.2026</p>
+      <p className="text-sm text-muted">Version 1.1 — gültig ab 01.03.2026</p>
 
       <h2>1. Verantwortlicher</h2>
       <p>Thorsten Ahrens<br />Serahr — serahr.de<br />E-Mail: kontakt@serahr.de</p>
@@ -204,7 +204,7 @@ function DSEChatDE() {
 function DSEChatEN() {
   return (
     <>
-      <p className="text-sm text-muted">Version 1.1 — effective from April 1, 2026</p>
+      <p className="text-sm text-muted">Version 1.1 — effective from March 1, 2026</p>
 
       <h2>1. Data Controller</h2>
       <p>Thorsten Ahrens<br />Serahr — serahr.de<br />Email: kontakt@serahr.de</p>

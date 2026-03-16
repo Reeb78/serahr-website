@@ -37,7 +37,7 @@ export default async function AGBChatPage({ params }: { params: Promise<{ locale
 function AGBChatDE() {
   return (
     <>
-      <p className="text-sm text-muted">Version 1.0 — gültig ab 01.04.2026</p>
+      <p className="text-sm text-muted">Version 1.0 — gültig ab 01.03.2026</p>
       <p className="text-sm text-muted">Anbieter: Thorsten Ahrens, Serahr — serahr.de</p>
 
       <h2>1. Geltungsbereich</h2>
@@ -162,7 +162,7 @@ function AGBChatDE() {
 function AGBChatEN() {
   return (
     <>
-      <p className="text-sm text-muted">Version 1.0 — effective from April 1, 2026</p>
+      <p className="text-sm text-muted">Version 1.0 — effective from March 1, 2026</p>
       <p className="text-sm text-muted">Provider: Thorsten Ahrens, Serahr — serahr.de</p>
 
       <h2>1. Scope</h2>

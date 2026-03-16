@@ -37,7 +37,7 @@ export default async function DatenschutzRemindPage({ params }: { params: Promis
 function DSERemindDE() {
   return (
     <>
-      <p className="text-sm text-muted">Version 1.0 — gültig ab 12.03.2026</p>
+      <p className="text-sm text-muted">Version 1.0 — gültig ab 01.03.2026</p>
 
       <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
         <strong>Hinweis:</strong> Diese Datenschutzerklärung bezieht sich auf die öffentlich zugängliche Demo-Version von SerahrRemind unter serahrremind.serahr.de. Die Demo dient ausschließlich zu Testzwecken. Bitte geben Sie nur fiktive Testdaten ein. Alle Daten werden stündlich automatisch gelöscht.
@@ -165,7 +165,7 @@ function DSERemindDE() {
 function DSERemindEN() {
   return (
     <>
-      <p className="text-sm text-muted">Version 1.0 — effective from March 12, 2026</p>
+      <p className="text-sm text-muted">Version 1.0 — effective from March 1, 2026</p>
 
       <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
         <strong>Note:</strong> This privacy policy applies to the publicly accessible demo version of SerahrRemind at serahrremind.serahr.de. The demo is for testing purposes only. Please enter only fictitious test data. All data is automatically deleted every hour.
