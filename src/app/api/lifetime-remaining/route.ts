@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
-const LICENCE_API = "https://licence.serahr.de/api/v1/lifetime-remaining";
+const LICENCE_API =
+  process.env.LICENCE_API_URL || "https://licence.serahr.de/api/v1/lifetime-remaining";
 
 export async function GET() {
   try {

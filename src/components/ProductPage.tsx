@@ -4,6 +4,8 @@ import { ExternalLink } from "lucide-react";
 import PageLayout from "./PageLayout";
 import ScrollReveal from "./ScrollReveal";
 import LifetimeCounter from "./LifetimeCounter";
+import WaveDivider from "./WaveDivider";
+import { buttonPrimary, buttonSecondary } from "@/lib/styles";
 
 type Feature = {
   key: string;
@@ -64,14 +66,14 @@ export default function ProductPage({
                 href={appUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-14 items-center gap-2 rounded-full bg-serahr-deep px-10 text-sm font-semibold text-white shadow-xl shadow-serahr-deep/25 transition-all hover:bg-serahr-medium hover:shadow-serahr-medium/30 hover:-translate-y-0.5"
+                className={buttonPrimary}
               >
                 {t("cta")}
                 <ExternalLink className="h-4 w-4" />
               </a>
               <Link
                 href="/kontakt"
-                className="inline-flex h-14 items-center rounded-full border border-serahr-medium/30 bg-white/50 px-10 text-sm font-semibold text-serahr-deep backdrop-blur-sm transition-all hover:border-serahr-medium hover:bg-serahr-ice hover:-translate-y-0.5"
+                className={buttonSecondary}
               >
                 {tCommon("contact_cta")}
               </Link>
@@ -80,13 +82,7 @@ export default function ProductPage({
         </div>
       </section>
 
-      {/* Wave divider */}
-      <div className="relative -mt-1 bg-white">
-        <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full" preserveAspectRatio="none">
-          <path d="M0 60V20C240 45 480 55 720 45C960 35 1200 15 1440 25V60H0Z" fill="white" />
-          <path d="M0 20C240 45 480 55 720 45C960 35 1200 15 1440 25" stroke="#EAF4FB" strokeWidth="1.5" fill="none" />
-        </svg>
-      </div>
+      <WaveDivider />
 
       {/* Features */}
       <section className="bg-white py-24">
@@ -261,7 +257,7 @@ export default function ProductPage({
                 href={appUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-14 items-center gap-2 rounded-full bg-serahr-deep px-10 text-sm font-semibold text-white shadow-xl shadow-serahr-deep/25 transition-all hover:bg-serahr-medium hover:shadow-serahr-medium/30 hover:-translate-y-0.5"
+                className={buttonPrimary}
               >
                 {t("cta_bottom.button")}
                 <ExternalLink className="h-4 w-4" />

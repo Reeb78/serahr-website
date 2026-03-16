@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { ChevronDown } from "lucide-react";
 import Typewriter from "./Typewriter";
+import { buttonPrimary, buttonSecondary } from "@/lib/styles";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -72,14 +73,14 @@ export default function HeroSection() {
         >
           <a
             href="#products"
-            className="inline-flex h-14 items-center gap-2 rounded-full bg-serahr-deep px-10 text-sm font-semibold text-white shadow-xl shadow-serahr-deep/25 transition-all hover:bg-serahr-medium hover:shadow-serahr-medium/30 hover:-translate-y-0.5"
+            className={buttonPrimary}
           >
             {t("hero.cta")}
             <ChevronDown className="h-4 w-4" />
           </a>
           <Link
             href="/kontakt"
-            className="inline-flex h-14 items-center rounded-full border border-serahr-medium/30 bg-white/50 px-10 text-sm font-semibold text-serahr-deep backdrop-blur-sm transition-all hover:border-serahr-medium hover:bg-serahr-ice hover:-translate-y-0.5"
+            className={buttonSecondary}
           >
             {t("hero.cta_secondary")}
           </Link>
