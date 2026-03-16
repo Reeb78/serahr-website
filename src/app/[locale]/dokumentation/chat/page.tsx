@@ -70,7 +70,7 @@ function DoksChatDE() {
         </table>
       </div>
       <p>Wenn Ihre Domain <code>meinefirma.de</code> ist und der Server die IP <code>49.12.234.56</code> hat, wird daraus <code>chat.meinefirma.de → 49.12.234.56</code>. Die Änderung kann bis zu 30 Minuten dauern.</p>
-      <p><strong>Hinweis für Nutzer von Website-Baukästen:</strong> Wenn Ihre Website nur unter einer Adresse des Baukasten-Anbieters läuft (z.B. <code>meinefirma.anbieter.com</code>), können Sie keine Subdomains und keine DNS-Einträge verwalten. In diesem Fall benötigen Sie eine eigene Domain (ab ca. 1 EUR/Monat, z.B. bei IONOS oder Namecheap). Die Domain können Sie auf Ihre bestehende Website weiterleiten und gleichzeitig eine Subdomain für SerahrChat nutzen. Bei Fragen hilft Ihnen unser Support gerne weiter.</p>
+      <p><strong>Hinweis für Nutzer von Website-Baukästen:</strong> Wenn Ihre Website nur unter einer Adresse des Baukasten-Anbieters läuft (z.B. <code>meinefirma.anbieter.com</code>), können Sie keine Subdomains und keine DNS-Einträge verwalten. In diesem Fall benötigen Sie eine eigene Domain (ab ca. 1 EUR/Monat, z.B. bei IONOS oder Namecheap). Die Domain können Sie auf Ihre bestehende Website weiterleiten und gleichzeitig eine Subdomain für SerahrChat nutzen. Beachten Sie außerdem: Um das Chat-Widget auf Ihrer Website einzubinden (siehe Abschnitt 7), benötigen die meisten Baukasten-Anbieter eine Funktion zum Einfügen von eigenem Code (oft &quot;Custom Code&quot;, &quot;Code-Einbettung&quot; oder &quot;HTML-Widget&quot; genannt). Diese Funktion ist in der Regel erst ab einem höheren Tarif verfügbar. Bei Fragen hilft Ihnen unser Support gerne weiter.</p>
 
       <h2>3. Mit dem Server verbinden (SSH)</h2>
       <p>Öffnen Sie ein Terminal (Windows: PowerShell, macOS/Linux: Terminal) und verbinden Sie sich mit Ihrem Server:</p>
@@ -145,7 +145,7 @@ function DoksChatDE() {
   strategy="lazyOnload"
 />`}</code></pre>
       <p><strong>WordPress:</strong> Installieren Sie das SerahrChat-Plugin unter Plugins → Installieren → Plugin hochladen, und tragen Sie die URL Ihrer Instanz unter Einstellungen → SerahrChat ein. Der Code wird dann automatisch eingefügt.</p>
-      <p><strong>Website-Baukästen:</strong> Die meisten Anbieter bieten eine Funktion zum Einfügen von eigenem Code (oft unter Bezeichnungen wie &quot;Custom Code&quot;, &quot;Code-Einbettung&quot; oder &quot;HTML-Widget&quot;). Diese Funktion ist in der Regel erst ab einem höheren Tarif verfügbar. Fügen Sie dort den oben gezeigten HTML-Code ein. Bei Fragen hilft unser Support gerne weiter.</p>
+      <p><strong>Website-Baukästen:</strong> Fügen Sie den oben gezeigten HTML-Code über die Custom-Code-Funktion Ihres Anbieters ein (siehe Hinweis in Abschnitt 2 zu Voraussetzungen und Tarifen).</p>
       <div className="overflow-x-auto">
         <table>
           <thead><tr><th>Parameter</th><th>Beschreibung</th><th>Standard</th></tr></thead>
@@ -256,7 +256,7 @@ function DoksChatEN() {
         </table>
       </div>
       <p>If your domain is <code>mycompany.com</code> and your server IP is <code>49.12.234.56</code>, this creates <code>chat.mycompany.com → 49.12.234.56</code>. The change may take up to 30 minutes to propagate.</p>
-      <p><strong>Note for website builder users:</strong> If your website only runs under a builder-provided address (e.g. <code>mycompany.builder.com</code>), you cannot manage subdomains or DNS records. In this case, you need your own domain (from approx. EUR 1/month, e.g. from IONOS or Namecheap). You can redirect the domain to your existing website and use a subdomain for SerahrChat at the same time. Contact our support if you need help.</p>
+      <p><strong>Note for website builder users:</strong> If your website only runs under a builder-provided address (e.g. <code>mycompany.builder.com</code>), you cannot manage subdomains or DNS records. In this case, you need your own domain (from approx. EUR 1/month, e.g. from IONOS or Namecheap). You can redirect the domain to your existing website and use a subdomain for SerahrChat at the same time. Also note: to embed the chat widget on your website (see section 7), most website builders require a custom code feature (often called &quot;Custom Code&quot;, &quot;Code Embed&quot; or &quot;HTML Widget&quot;). This feature is usually only available on higher-tier plans. Contact our support if you need help.</p>
 
       <h2>3. Connect to Server (SSH)</h2>
       <p>Open a terminal (Windows: PowerShell, macOS/Linux: Terminal) and connect to your server:</p>
@@ -330,7 +330,7 @@ function DoksChatEN() {
   strategy="lazyOnload"
 />`}</code></pre>
       <p><strong>WordPress:</strong> Install the SerahrChat plugin via Plugins → Add New → Upload Plugin, then enter your instance URL under Settings → SerahrChat. The code is then added automatically.</p>
-      <p><strong>Website builders:</strong> Most providers offer a way to add custom code (often called &quot;Custom Code&quot;, &quot;Code Embed&quot; or &quot;HTML Widget&quot;). This feature is usually only available on higher-tier plans. Paste the HTML code shown above there. Contact our support if you need help.</p>
+      <p><strong>Website builders:</strong> Paste the HTML code shown above using your provider&apos;s custom code feature (see the note in section 2 for requirements and plan tiers).</p>
       <div className="overflow-x-auto">
         <table>
           <thead><tr><th>Parameter</th><th>Description</th><th>Default</th></tr></thead>
