@@ -37,7 +37,7 @@ export default async function AGBChatPage({ params }: { params: Promise<{ locale
 function AGBChatDE() {
   return (
     <>
-      <p className="text-sm text-muted">Version 1.0 — gültig ab 01.03.2026</p>
+      <p className="text-sm text-muted">Version 1.1 — gültig ab 21.03.2026</p>
       <p className="text-sm text-muted">Anbieter: Thorsten Ahrens, Serahr — serahr.de</p>
 
       <h2>1. Geltungsbereich</h2>
@@ -87,15 +87,8 @@ function AGBChatDE() {
         <li>Alle Daten verbleiben auf dem Server des Kunden — der Anbieter hat keinen Zugriff darauf und löscht keine Daten auf dem Kundenserver.</li>
       </ul>
 
-      <h2>8. Kein Widerrufsrecht / Kulanz-Rückgabe</h2>
+      <h2>8. Kein Widerrufsrecht</h2>
       <p>Da sich SerahrChat ausschließlich an Unternehmer im Sinne von § 14 BGB richtet, besteht <strong>kein gesetzliches Widerrufsrecht</strong>.</p>
-      <p>Der Anbieter gewährt auf freiwilliger Basis eine <strong>Kulanzfrist von 14 Tagen</strong> ab Vertragsschluss (nachfolgend &quot;Kulanzfrist&quot;). Dieses Recht ist freiwillig, widerruflich und begründet <strong>keinen gesetzlichen Anspruch</strong>. Es handelt sich nicht um ein Widerrufsrecht im Sinne der §§ 355 ff. BGB. Voraussetzung für die Inanspruchnahme ist eine formlose Mitteilung per E-Mail an kontakt@serahr.de innerhalb der Kulanzfrist.</p>
-      <p>Bei Inanspruchnahme der Kulanzfrist wird der gezahlte Betrag abzüglich eines anteiligen Wertersatzes für bereits erbrachte Leistungen (Updates, Support, Lizenzvalidierung) erstattet. Der Wertersatz berechnet sich wie folgt:</p>
-      <ul>
-        <li><strong>Monatspläne:</strong> Tagesgenaue Abrechnung (Monatspreis / 30 × Nutzungstage)</li>
-        <li><strong>Jahrespläne:</strong> Auf Basis des vergleichbaren Monatstarifs (Jahrespreis / 12 / 30 × Nutzungstage)</li>
-        <li><strong>Lifetime-Plan:</strong> Auf Basis von 49 EUR/Monat (Pro-Monatstarif) / 30 × Nutzungstage</li>
-      </ul>
       <p><strong>Hinweis:</strong> Sollte im Einzelfall dennoch ein gesetzliches Widerrufsrecht bestehen (z.B. weil der Kunde entgegen seiner Angabe als Verbraucher handelt), gelten die gesetzlichen Regelungen der §§ 355 ff. BGB. Der Anbieter behält sich in diesem Fall vor, Wertersatz für bereits erbrachte Leistungen geltend zu machen.</p>
 
       <h2>9. Pflichten des Kunden</h2>
@@ -148,7 +141,9 @@ function AGBChatDE() {
       <p>Einzelheiten zur Datenverarbeitung finden Sie in unserer Datenschutzerklärung.</p>
 
       <h2>17. AGB-Änderungen</h2>
-      <p>Der Anbieter kann diese AGB mit einer Ankündigungsfrist von 30 Tagen per E-Mail ändern. Widerspricht der Kunde nicht innerhalb von 30 Tagen nach Zugang der Änderungsmitteilung, gelten die neuen AGB als akzeptiert. Bei wesentlichen Änderungen hat der Kunde ein Sonderkündigungsrecht zum Änderungszeitpunkt.</p>
+      <p>Der Anbieter kann diese AGB mit einer Ankündigungsfrist von mindestens 6 Wochen per E-Mail ändern. Die Änderungsmitteilung enthält den konkreten Änderungsinhalt, das Datum des Inkrafttretens sowie einen Hinweis auf das Widerspruchsrecht und das Sonderkündigungsrecht.</p>
+      <p>Der Kunde wird beim nächsten Login im Admin-Panel aufgefordert, die geänderten AGB zu bestätigen. Nutzt der Kunde die Software nach Inkrafttreten der geänderten AGB weiter, gilt dies als Zustimmung.</p>
+      <p>Bei Widerspruch steht dem Kunden ein Sonderkündigungsrecht zum Änderungszeitpunkt zu. Bis zur Kündigung gelten die bisherigen AGB fort. Für <strong>Lifetime-Kunden</strong> gilt: Wesentliche Änderungen (Leistungsumfang, Haftung) bedürfen der aktiven Zustimmung. Stimmt der Lifetime-Kunde nicht zu, gelten die AGB in der zum Zeitpunkt des Kaufs gültigen Fassung fort. Redaktionelle oder gesetzlich erforderliche Änderungen gelten ohne gesonderte Zustimmung.</p>
 
       <h2>18. Sprachfassungen</h2>
       <p>Diese AGB sind in deutscher und englischer Sprache verfasst. Bei Widersprüchen zwischen der deutschen und der englischen Fassung ist <strong>ausschließlich die deutsche Fassung maßgeblich</strong>. Die englische Fassung dient nur der Information.</p>
@@ -162,7 +157,7 @@ function AGBChatDE() {
 function AGBChatEN() {
   return (
     <>
-      <p className="text-sm text-muted">Version 1.0 — effective from March 1, 2026</p>
+      <p className="text-sm text-muted">Version 1.1 — effective from March 21, 2026</p>
       <p className="text-sm text-muted">Provider: Thorsten Ahrens, Serahr — serahr.de</p>
 
       <h2>1. Scope</h2>
@@ -211,15 +206,9 @@ function AGBChatEN() {
         <li>All data remains on the customer&apos;s server — the Provider has no access and does not delete any data on the customer&apos;s server.</li>
       </ul>
 
-      <h2>8. No Right of Withdrawal / Courtesy Return</h2>
+      <h2>8. No Right of Withdrawal</h2>
       <p>As SerahrChat is intended exclusively for businesses within the meaning of § 14 BGB, there is <strong>no statutory right of withdrawal</strong>.</p>
-      <p>The Provider voluntarily grants a <strong>courtesy return period of 14 days</strong> from the date of contract conclusion. This right is voluntary, revocable, and <strong>does not constitute a statutory entitlement</strong>. A request must be submitted informally by email to kontakt@serahr.de within the Courtesy Period.</p>
-      <p>Compensation is calculated as follows:</p>
-      <ul>
-        <li><strong>Monthly plans:</strong> Daily pro-rata (monthly price / 30 × days used)</li>
-        <li><strong>Annual plans:</strong> Based on the comparable monthly rate (annual price / 12 / 30 × days used)</li>
-        <li><strong>Lifetime plan:</strong> Based on EUR 49/month (Pro monthly rate) / 30 × days used</li>
-      </ul>
+      <p><strong>Note:</strong> Should a statutory right of withdrawal nevertheless apply in individual cases (e.g., because the Customer is acting as a consumer contrary to their declaration), the statutory provisions of §§ 355 et seq. BGB shall apply. The Provider reserves the right to claim compensation for services already rendered.</p>
 
       <h2>9. Customer Obligations</h2>
       <ul>
@@ -262,7 +251,9 @@ function AGBChatEN() {
       <p>Details on data processing can be found in our Privacy Policy.</p>
 
       <h2>17. Changes to Terms</h2>
-      <p>The Provider may amend these Terms with 30 days&apos; notice by email. If the Customer does not object within 30 days, the new Terms are deemed accepted.</p>
+      <p>The Provider may amend these Terms with at least 6 weeks&apos; notice by email. The amendment notice shall include the specific changes, the effective date, and information about the right to object and the special right of termination.</p>
+      <p>The Customer will be prompted to confirm the amended Terms upon their next login to the admin panel. Continued use of the software after the effective date of the amended Terms constitutes acceptance.</p>
+      <p>In case of objection, the Customer has a special right of termination effective on the date of the change. The previous Terms shall continue to apply until termination. For <strong>Lifetime customers</strong>: Material changes (scope of services, liability) require active consent. If the Lifetime customer does not consent, the Terms valid at the time of purchase shall continue to apply. Editorial or legally required changes apply without separate consent.</p>
 
       <h2>18. Language Versions</h2>
       <p>In the event of any discrepancy between the German and English versions, the <strong>German version shall prevail</strong>. The English version is for informational purposes only.</p>

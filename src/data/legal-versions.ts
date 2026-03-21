@@ -15,6 +15,7 @@ export interface LegalVersion {
   version: string;
   validFrom: string; // YYYY-MM-DD
   validTo?: string; // YYYY-MM-DD — undefined = current version
+  changeType?: "editorial" | "legal" | "material"; // undefined = initial version
   pdf?: {
     de: string; // path relative to /public
     en: string;
@@ -40,10 +41,17 @@ export const legalDocuments: LegalDocument[] = [
       en: "Terms — SerahrChat",
     },
     current: {
-      version: "1.0",
-      validFrom: "2026-04-01",
+      version: "1.1",
+      validFrom: "2026-03-21",
+      changeType: "material",
     },
-    archive: [],
+    archive: [
+      {
+        version: "1.0",
+        validFrom: "2026-03-19",
+        validTo: "2026-03-21",
+      },
+    ],
   },
   {
     slug: "datenschutz",
@@ -53,7 +61,7 @@ export const legalDocuments: LegalDocument[] = [
     },
     current: {
       version: "1.0",
-      validFrom: "2026-02-01",
+      validFrom: "2026-03-19",
     },
     archive: [],
   },
@@ -65,7 +73,7 @@ export const legalDocuments: LegalDocument[] = [
     },
     current: {
       version: "1.1",
-      validFrom: "2026-04-01",
+      validFrom: "2026-03-19",
     },
     archive: [],
   },
@@ -77,7 +85,7 @@ export const legalDocuments: LegalDocument[] = [
     },
     current: {
       version: "1.0",
-      validFrom: "2026-03-12",
+      validFrom: "2026-03-19",
     },
     archive: [],
   },
