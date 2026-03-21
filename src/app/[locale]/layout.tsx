@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/seo";
+import Script from "next/script";
 import JsonLd from "@/components/JsonLd";
 import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "../globals.css";
@@ -122,6 +123,13 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>
           {children}
         </NextIntlClientProvider>
+        <Script
+          src="https://bot.serahr.de/embed/embed.min.js"
+          data-instance="https://bot.serahr.de"
+          data-position="bottom-right"
+          data-color="#1e3a5f"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );

@@ -66,6 +66,29 @@ function DatenschutzDE() {
         gespeichert. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.
       </p>
 
+      <h2>Chatbot (SerahrChat)</h2>
+      <p>
+        Auf dieser Website ist ein KI-gest&uuml;tzter Chatbot (SerahrChat) eingebunden, der Fragen
+        zu unseren Produkten und Dienstleistungen beantwortet. Bei der Nutzung des Chatbots werden
+        folgende Daten verarbeitet:
+      </p>
+      <ul>
+        <li>Ihre eingegebenen Chat-Nachrichten</li>
+        <li>Ihre IP-Adresse (anonymisiert gespeichert)</li>
+        <li>Zeitpunkt der Anfrage</li>
+      </ul>
+      <p>
+        Die Daten werden auf einem Server bei Hetzner Online GmbH (Gunzenhausen, Deutschland)
+        verarbeitet. Zur Generierung der Antworten werden Ihre Fragen an einen KI-Sprachdienst
+        (derzeit OpenRouter/AI21) weitergeleitet. Es werden dabei keine personenbezogenen Daten
+        &uuml;bermittelt, die &uuml;ber den Inhalt Ihrer Frage hinausgehen.
+      </p>
+      <p>
+        Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse
+        an der effizienten Beantwortung von Kundenanfragen). Chat-Verl&auml;ufe werden nicht dauerhaft
+        gespeichert und keiner Person zugeordnet.
+      </p>
+
       <h2>Ihre Rechte</h2>
       <p>Sie haben das Recht auf:</p>
       <ul>
@@ -146,6 +169,28 @@ function DatenschutzEN() {
         This website is hosted externally. Personal data collected on this website (e.g. IP addresses,
         contact requests) is stored on the servers of the hosting provider. Processing is carried
         out on the basis of Art. 6(1)(f) GDPR.
+      </p>
+
+      <h2>Chatbot (SerahrChat)</h2>
+      <p>
+        This website uses an AI-powered chatbot (SerahrChat) that answers questions about our
+        products and services. When using the chatbot, the following data is processed:
+      </p>
+      <ul>
+        <li>Your chat messages</li>
+        <li>Your IP address (stored in anonymized form)</li>
+        <li>Timestamp of the request</li>
+      </ul>
+      <p>
+        Data is processed on a server hosted by Hetzner Online GmbH (Gunzenhausen, Germany).
+        To generate responses, your questions are forwarded to an AI language service
+        (currently OpenRouter/AI21). No personal data beyond the content of your question
+        is transmitted.
+      </p>
+      <p>
+        Processing is based on Art. 6(1)(f) GDPR (legitimate interest in efficiently answering
+        customer enquiries). Chat histories are not permanently stored and are not linked to
+        any individual.
       </p>
 
       <h2>Your Rights</h2>
