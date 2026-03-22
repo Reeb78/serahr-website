@@ -83,7 +83,8 @@
     "legal_heading": "Rechtliches",
     "documentation": "Dokumentation",
     "contact": "Kontakt",
-    "copyright": "© {year} Thorsten Ahrens. Alle Rechte vorbehalten."
+    "copyright": "© {year} Thorsten Ahrens. Alle Rechte vorbehalten.",
+    "b2b_note": "Unsere Produkte richten sich ausschließlich an Unternehmen, Freiberufler und Gewerbetreibende (B2B)."
   },
   "contact": {
     "meta_title": "Kontakt",
